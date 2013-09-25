@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>installshield  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> <a href="install.htm">install</a>, <a href="msi.htm">msi</a><br/>
+<br/>
+<a href="mac.htm">Mac</a>rovision <a href="installshield.htm">InstallShield</a> is a <a href="prop.htm">prop</a>rietary and aggravating but very <a href="pop.htm">pop</a>ular <a href="ide.htm">IDE</a>. for creating .<a href="msi.htm">msi</a> <a href="install.htm">install</a>ers.<br/>
+<br/>
+<br/>
+<a class="ext" href="http://stackoverflow.com/questions/2857671/what-encoding-does-installshield-expect-non-latin-alphabet-string-table-entries-t/2908736">http://stackoverflow.com/questions/2857671/what-encoding-does-installshield-expect-non-latin-alphabet-string-table-entries-t/2908736</a><br/>
+<br/>
+<span class="quot">"'<br/>
+<a href="work.htm">work</a>ing <small>(with <a href="installshield.htm">InstallShield</a> 2009)</small> algorithm, reverse-engineered by a co-<a href="work.htm">work</a>er:<br/>
+&nbsp;&nbsp;&nbsp;1. <a href="start.htm">Start</a> with a unicode <small>(multi-byte-character)</small> string<br/>
+&nbsp;&nbsp;&nbsp;2. Write out the length as the encoded-length field in the ism-<a href="file.htm">file</a><br/>
+&nbsp;&nbsp;&nbsp;3. Encode the string as UTF-16-little-endian<br/>
+&nbsp;&nbsp;&nbsp;4. Base-64 using the uuencode dictionary, except with ` <small>(<a href="back.htm">back</a>-tick)</small> instead of <a href="spac.htm">spac</a>es.<br/>
+&nbsp;&nbsp;&nbsp;5. Write the result to the ism-<a href="file.htm">file</a>, escaping XML entities<br/>
+<br/>
+Be aware that base-64ing using the uuencode dictionary is not the same as using the uuencode algorithm. Standard uuencode <a href="produc.htm">produc</a>es a set of newline-separated lines, including a header, footers and one or more data lines, each of which begins with a length-character. If you're implementing this using a uuencode codec, you'll need to strip all of that off.<br/>
+'"</span><br/>
+<br/>
+<br/>
+<br/>
+<a class="ext" href="http://TestingReflections.com/node/view/4839">TestingReflections.com/node/view/4839</a> <span class="quot2">>>Troubleshooting <a href="installshield.htm">Installshield</a> Errors with Windows <a href="install.htm">Install</a>er Logging</span><br/>
+<br/>
+<span class="shell">$ SomeSetup.exe /c /t <a class="ext" href="file:///c:\SomeOutputDir">c:\SomeOutputDir</a> #extract .<a href="msi.htm">msi</a> from .exe</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://Forum.StorageCraft.com/Community/forums/t/1637.aspx">Forum.StorageCraft.com/Community/forums/t/1637.aspx</a><br/>
+<span class="quot">"'<br/>
+To create your <a href="own.htm">own</a> answer <a href="file.htm">file</a>, <a href="use.htm">use</a> the /r options with setup.exe<br/>
+<br/>
+Setup.exe /r<br/>
+<br/>
+This will create a setup.iss answer <a href="file.htm">file</a>.&nbsp;&nbsp;The default location for this <a href="file.htm">file</a> is <a class="ext" href="file:///c:\windows.">c:\windows.</a><br/>
+<br/>
+To <a href="use.htm">use</a> silent <a href="install.htm">install</a>, <a href="use.htm">use</a> the following options:<br/>
+<br/>
+Setup.exe /s /f1<a class="ext" href="file:///C:\setup.iss">C:\setup.iss</a> /f2<a class="ext" href="file:///c:\setup.log">c:\setup.log</a><br/>
+'"</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://Community.Acresso.com/archive/index.php?t-131806.html">Community.Acresso.com/archive/index.php?t-131806.html</a> <span class="quot2">>>Standalone <a href="buil.htm">buil</a>d and ISDEV : error 125</span><br/>
+<a class="ext" href="http://Community.Macrovision.com/showthread.php?t=153916">Community.Macrovision.com/showthread.php?t=153916</a> <span class="quot2">>>In order to <a href="use.htm">use</a> the Standalone <a href="buil.htm">buil</a>der with Merge <a href="mod.htm">Mod</a>ules you need <a href="install.htm">install</a> the <a href="install.htm">Install</a>Script <a href="obj.htm">Obj</a>ects that include the Holder <a href="obj.htm">Obj</a>ect. You can download this using Update Service or on the <a href="installshield.htm">InstallShield</a> <a href="web.htm">web</a>site. Run this <a href="install.htm">install</a>er on the StandAlone <a href="mac.htm">mac</a>hine and this should solve your 125 error.</span><br/>
+<a class="ext" href="http://Community.Macrovision.com/showthread.php?t=184338">Community.Macrovision.com/showthread.php?t=184338</a> <span class="quot2">>>standalone <a href="buil.htm">buil</a>d has errors on including MS merge <a href="mod.htm">mod</a>ules</span><br/>
+<a class="ext" href="http://Community.InstallShield.com/showthread.php?t=159149">Community.InstallShield.com/showthread.php?t=159149</a> <span class="quot2">>>Standalone <a href="buil.htm">Buil</a>d problem</span><br/>
+<a class="ext" href="http://Community.Macrovision.com/showthread.php?t=183545">Community.Macrovision.com/showthread.php?t=183545</a> <span class="quot2">>>Standalone <a href="buil.htm">buil</a>d issues with IS2008</span><br/>
+<a class="ext" href="http://Community.Acresso.com/archive/index.php?t-154602.html">Community.Acresso.com/archive/index.php?t-154602.html</a> <span class="quot2">>>Standalone <a href="buil.htm">buil</a>d <a href="mod.htm">mod</a>ule cannot find merge <a href="mod.htm">mod</a>ule</span><br/>
+<br/>
+<a class="ext" href="http://Community.InstallShield.com/showthread.php?t=155107&page=2">Community.InstallShield.com/showthread.php?t=155107&page=2</a><br/>
+<span class="quot">"' SherylSikora <a href="installshield.htm">InstallShield</a> Developer<br/>
+Join Date: Oct 2001<br/>
+Location: Schaumburg, IL.<br/>
+Posts: 357<br/>
+<br/>
+I would like to take this opportunity to clear up some confusion regarding how the StandAlone <a href="buil.htm">Buil</a>d handles <a href="obj.htm">obj</a>ects and merge <a href="mod.htm">mod</a>ules.<br/>
+<br/>
+As a rule, if the .msm <a href="file.htm">file</a> you are using is classified as an <a href="obj.htm">obj</a>ect, the <a href="file.htm">file</a>s should be placed in an "<a href="obj.htm">Obj</a>ects" folder under the StandAlone <a href="buil.htm">Buil</a>d <a href="install.htm">install</a> location. An example of this would be the MDAC 2.7 <a href="obj.htm">obj</a>ect that was mentioned. If the .msm <a href="file.htm">file</a> is classified as a merge <a href="mod.htm">mod</a>ule, the <a href="file.htm">file</a> should be placed in an "<a href="mod.htm">Mod</a>ules\i386" folder. An example of this type of <a href="file.htm">file</a> would be the Crystal Report Engine API.Msm.<br/>
+<br/>
+The "<a href="obj.htm">Obj</a>ectsGallery" folder should not be <a href="delet.htm">delet</a>ed because some of the <a href="obj.htm">obj</a>ects need those .ini <a href="file.htm">file</a>s to determine where to find their dependant binaries, which are needed to <a href="buil.htm">buil</a>d those <a href="obj.htm">obj</a>ects. An example of one of these <a href="obj.htm">obj</a>ects would be the DirectX 9 <a href="obj.htm">obj</a>ect.<br/>
+<br/>
+I appreciate your suggestion that the "<a href="obj.htm">Obj</a>ects" folder should be created by the <a href="install.htm">install</a> to help <a href="gui.htm">gui</a>de the <a href="user.htm">user</a> and I have created Issue # IOC-000045751 for this.<br/>
+<br/>
+In addition, an underlying issue is causing the -o command line parameter to not <a href="work.htm">work</a> as you expect it to. As a <a href="work.htm">work</a>around, if you want to <a href="use.htm">use</a> the -o parameter to specify your <a href="own.htm">own</a> location for your <a href="obj.htm">obj</a>ects and merge <a href="mod.htm">mod</a>ules you will need to copy those <a href="file.htm">file</a>s from your <a href="installshield.htm">InstallShield</a> 11.5 <a href="install.htm">install</a> location into the StandAlone <a href="buil.htm">Buil</a>d <a href="install.htm">install</a> location into either a folder named "<a href="obj.htm">Obj</a>ects" or "<a href="mod.htm">Mod</a>ules\i386" as I described above. You can then specify any path you want on the command line using the -o parameter and the <a href="buil.htm">buil</a>d will <a href="use.htm">use</a> it. This is an unnecessary duplication of these <a href="file.htm">file</a>s so I have created Issue # IOC-000045700 for this.<br/>
+'"</span><br/>
+<br/>
+<br/>
+Copying the .msm <a href="file.htm">file</a>s as suggested did not <a href="work.htm">work</a> for me.<br/>
+<br/>
+<br/>
+<a class="ext" href="http://Community.InstallShield.com/showthread.php?t=155107&page=4">Community.InstallShield.com/showthread.php?t=155107&page=4</a><br/>
+<span class="quot">"'<br/>
+It appears to be an issue still in <a href="installshield.htm">InstallShield</a> 12. I am using MS<a href="buil.htm">Buil</a>d to <a href="buil.htm">buil</a>d our <a href="install.htm">install</a>ation and get the following error:<br/>
+<br/>
+<a class="ext" href="file:///C:\TrkkBuild\Trackker">C:\TrkkBuild\Trackker</a> <a href="install.htm">Install</a> <a class="ext" href="http://Build.proj(194">Build.proj(194</a>,5)</small>: error : -7017: The <a href="obj.htm">Obj</a>ect/MergeModule <a class="ext" href="file:///\\Devinstaller\TestBuilds\MergeModules\Trackker\2007\MDAC28SP1.msm">"\\Devinstaller\TestBuilds\MergeModules\Trackker\2007\MDAC28SP1.msm"</a> is not <a href="install.htm">install</a>ed on the local system. To download it, go to the Redistributables view, right click on any item and select "Download required Merge <a href="mod.htm">Mod</a>ules."<br/>
+<br/>
+I have many other merge <a href="mod.htm">mod</a>ules included in this <a href="install.htm">install</a>ation that are <a href="stor.htm">stor</a>ed in the merge <a href="mod.htm">mod</a>ule path <a class="ext" href="file:///\\Devinstaller\TestBuilds\MergeModules\Trackker\2007">"\\Devinstaller\TestBuilds\MergeModules\Trackker\2007"</a> that I do not get this error with. I have tried copying MDAC28SP1.msm to <a class="ext" href="file:///C:\Program Files\Macrovision\IS 12 StandaloneBuild\Modules\i386">"C:\Program Files\Macrovision\IS 12 StandaloneBuild\Modules\i386"</a> and <a class="ext" href="file:///C:\Program Files\Macrovision\IS 12 StandaloneBuild\Objects">"C:\Program Files\Macrovision\IS 12 StandaloneBuild\Objects"</a> but it has not corrected the issue.<br/>
+'"</span><br/>
+<br/>
+<a class="ext" href="http://InstallSite.org/pages/en/bugs_isw115.htm">InstallSite.org/pages/en/bugs_isw115.htm</a> <span class="quot2">>>If you want to <a href="use.htm">use</a> the -o parameter to specify your <a href="own.htm">own</a> location for your <a href="obj.htm">obj</a>ects and merge <a href="mod.htm">mod</a>ules you will need to copy those <a href="file.htm">file</a>s from your <a href="installshield.htm">InstallShield</a> 11.5 <a href="install.htm">install</a> location into the StandAlone <a href="buil.htm">Buil</a>d <a href="install.htm">install</a> location into either a folder named "<a href="obj.htm">Obj</a>ects" or "<a href="mod.htm">Mod</a>ules\i386". You can then specify any path you want on the command line using the -o parameter and the <a href="buil.htm">buil</a>d will <a href="use.htm">use</a> it. This is an unnecessary duplication of these <a href="file.htm">file</a>s.</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://Community.Macrovision.com/showthread.php?t=169901">Community.Macrovision.com/showthread.php?t=169901</a><br/>
+<br/>
+<br/>
+<br/>
+Is sbuninst.exe an un<a href="install.htm">install</a>er helper app?&nbsp;&nbsp;Is the <a href="sourc.htm">sourc</a>e in svn?<br/>
+<br/>
+<span class="quot">> ISDEV : warning -6248: Could not find dependent <a href="file.htm">file</a> sb<a href="imag.htm">imag</a>eapi.dll, or one of its dependencies of component <a href="imag.htm">Imag</a>eManager.exe</span><br/>
+<span class="quot2">>> Running depends.exe on sb<a href="imag.htm">imag</a>eapi.dll tells me I'm missing DWMAPI.DLL</span><br/>
+<br/>
+<span class="shell">$ sfc.exe /scannow #Scans all <a href="protect.htm">protect</a>ed system <a href="file.htm">file</a>s and replaces incorrect versions with correct Microsoft versions.</span><br/>
+<br/>
+DWMAPI.dll link/not-found problem.<br/>
+&nbsp;Possible culprits: IE7, bad .<a href="net.htm">NET</a> fram<a href="work.htm">work</a> <a href="install.htm">install</a><br/>
+&nbsp;Possible solutions: sfc.exe, VCRedist?<br/>
+<br/>
+<br/>
+<span class="quot">> ISDEV : warning -6558: The Custom Action CreateServic<a href="econ.htm">eCon</a>fig<a href="file.htm">File</a> in the <a href="install.htm">Install</a>ExecuteSequence table is run from an <a href="install.htm">install</a>ed <a href="file.htm">file</a>.&nbsp;&nbsp;To run the custom action successfully, you may need to have a condition that checks if the <a href="sourc.htm">sourc</a>e <a href="file.htm">file</a> is <a href="install.htm">install</a>ed locally.</span><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/installshield">installshield</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

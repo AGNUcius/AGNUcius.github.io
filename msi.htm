@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>msi  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> <a href="install.htm">install</a>, <a href="installshield.htm">InstallShield</a>, WiX<br/>
+<br/>
+<a href="pack.htm">Pack</a>age describes one or more <a href="produc.htm">Produc</a>ts<br/>
+<a href="produc.htm">Produc</a>t contains one or more Features<br/>
+Feature contains one or more Components<br/>
+Components <a href="mod.htm">mod</a>ify <a href="file.htm">file</a>s, registry entries, services<br/>
+<br/>
+<a href="produc.htm">Produc</a>tCode <a href="produc.htm">Produc</a>tVersion<br/>
+Upgrade Code<br/>
+<br/>
+~/bin/SCRIPTS/WiMerge.vbs<br/>
+~/bin/SCRIPTS/WiMakCab.vbs<br/>
+~/bin/SCRIPTS/WiLstPrd.vbs<br/>
+<br/>
+<br/>
+<span class="h2">==Extract <a href="file.htm">file</a>s from .<a href="msi.htm">msi</a></span><br/>
+<span class="shell">$ <a href="msi.htm">msi</a>exec /a Example.<a href="msi.htm">msi</a> /qb TARGETDIR="Example"</span><br/>
+<span class="shell">$ dark.exe /x Some<a href="install.htm">Install</a>er.<a href="msi.htm">msi</a> #Get dark.exe from WiX toolkit</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://Microsoft.com/downloads/details.aspx?FamilyId=6A35AC14-2626-4846-BB51-DDCE49D6FFB6">Microsoft.com/downloads/details.aspx?FamilyId=6A35AC14-2626-4846-BB51-DDCE49D6FFB6</a> <span class="quot2">>>Windows <a href="install.htm">Install</a>er 4.5 Software Development Kit</span><br/>
+<br/>
+<span class="shell">$ <a href="msi.htm">msi</a>zap.exe # <a class="ext" href="http://MSDN.Microsoft.com/en-us/library/aa370523.aspx">MSDN.Microsoft.com/en-us/library/aa370523.aspx</a> <span class="quot2">>><a href="msi.htm">Msi</a>zap.exe is a command line utility that removes either all Windows <a href="install.htm">Install</a>er information for a <a href="produc.htm">produc</a>t or all <a href="produc.htm">produc</a>ts <a href="install.htm">install</a>ed on a <a href="compu.htm">compu</a>ter.</span></span><br/>
+<br/>
+<a class="ext" href="file:///c:\Program Files\Microsoft SDKs\Windows\v6.1\bin\msizap.exe">"c:\Program Files\Microsoft SDKs\Windows\v6.1\bin\msizap.exe"</a><br/>
+<br/>
+<br/>
+// <a class="ext" href="http://Download.Microsoft.com/download/e/9/d/e9d80355-7ab4-45b8-80e8-983a48d5e1bd/msicuu2.exe">Download.Microsoft.com/download/e/9/d/e9d80355-7ab4-45b8-80e8-983a48d5e1bd/msicuu2.exe</a><br/>
+// <a class="ext" href="http://Download.microsoft.com/download/office2000pro/util20/1/NT4/EN-US/msicuu.exe">Download.microsoft.com/download/office2000pro/util20/1/NT4/EN-US/msicuu.exe</a><br/>
+<span class="shell">$ <a href="msi.htm">msi</a>cuu.exe #Windows <a href="install.htm">Install</a>er Clean Up Utility -- <a class="ext" href="http://Support.Microsoft.com/kb/290301">Support.Microsoft.com/kb/290301</a></span><br/>
+<br/>
+<a class="ext" href="http://Support.Microsoft.com/kb/Q238413">Support.Microsoft.com/kb/Q238413</a><br/>
+<br/>
+<span class="shell">$ <a href="msi.htm">msi</a>val2.exe #command line utility that can run a suite of Internal Consistency Evaluators - ICEs. -- <a class="ext" href="http://msdn.microsoft.com/en-us/library/aa370504(VS.85).aspx">http://msdn.microsoft.com/en-us/library/aa370504(VS.85).aspx</a></span><br/>
+<br/>
+<span class="shell">$ <a href="msi.htm">msi</a>stuff.exe #command line utility that can be <a href="use.htm">use</a>d to display or configure the re<a href="sourc.htm">sourc</a>es in the Setup.exe <a href="boot.htm">boot</a>strap executable. -- <a class="ext" href="http://msdn.microsoft.com/en-us/library/aa370408(VS.85).aspx">http://msdn.microsoft.com/en-us/library/aa370408(VS.85).aspx</a></span><br/>
+<br/>
+<a class="ext" href="http://MakeMSI-Manual.DennisBareis.com/msival2.htm">MakeMSI-Manual.DennisBareis.com/msival2.htm</a><br/>
+<br/>
+<a class="ext" href="http://GormanOnline.com/blogs/msidle">GormanOnline.com/blogs/msidle</a> <span class="quot2">>>Join me on my journey to become one of the "<a href="msi.htm">MSI</a>dle" -- those elite geeks who code an <a href="msi.htm">MSI</a> patch faster than a speeding bullet, can write custom actions in a single bound, and <a href="mak.htm">mak</a>e the world of deployment safe for the rest of us.</span><br/>
+<br/>
+<a class="ext" href="http://Support.Microsoft.com/kb/227091">Support.Microsoft.com/kb/227091</a> <span class="quot2">>>Command-Line Switches for the Microsoft Windows <a href="install.htm">Install</a>er Tool</span><br/>
+<br/>
+<a class="ext" href="http://Support.Microsoft.com/kb/231747">Support.Microsoft.com/kb/231747</a> <span class="quot2">>>How to publish non-<a href="msi.htm">MSI</a> programs with .zap <a href="file.htm">file</a>s</span><br/>
+<br/>
+<a class="ext" href="http://ServerWatch.com/tutorials/article.php/3774681">ServerWatch.com/tutorials/article.php/3774681</a> <span class="quot2">>>Win<a href="install.htm">Install</a> LE, <a href="msi.htm">MSI</a> Creator and Configuration <a href="buil.htm">Buil</a>der</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://Scalable.com/WinINSTALL_LE.aspx">Scalable.com/WinINSTALL_LE.aspx</a> <span class="quot2">>>Win<a href="install.htm">INSTALL</a> LE is a <a href="free.htm">FREE</a> software <a href="pack.htm">pack</a>aging and application <a href="install.htm">install</a>er management solution that supports the latest <a href="msi.htm">MSI</a> schema and provides the functionality, consistency, and ease of <a href="use.htm">use</a> that have made it a favorite with <a href="admin.htm">admin</a>istrators for over a decade.</span><br/>
+<br/>
+<br/>
+<br/>
+<span class="h3">=== Debug</span><br/>
+<span class="shell">$ <a href="msi.htm">msi</a>exec /l* Debug.log /i WixSmallBusinessWebsite.<a href="msi.htm">msi</a></span><br/>
+<br/>
+<span class="shell">$ <a href="msi.htm">msi</a>exec /help</span><br/>
+<span class="quot">"'<br/>
+Windows ® <a href="install.htm">Install</a>er. V 4.00.6001.0<br/>
+<br/>
+<a href="msi.htm">msi</a>exec /Option &lt;Required Parameter> <small>[Optional Parameter]</small><br/>
+<br/>
+<a href="install.htm">Install</a> Options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<a href="pack.htm">pack</a>age | /i> &lt;<a href="produc.htm">Produc</a>t.<a href="msi.htm">msi</a>><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="install.htm">Install</a>s or configures a <a href="produc.htm">produc</a>t<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/a &lt;<a href="produc.htm">Produc</a>t.<a href="msi.htm">msi</a>><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="admin.htm">Admin</a>istrative <a href="install.htm">install</a> - <a href="install.htm">Install</a>s a <a href="produc.htm">produc</a>t on the <a href="net.htm">net</a><a href="work.htm">work</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/j&lt;u|m> &lt;<a href="produc.htm">Produc</a>t.<a href="msi.htm">msi</a>> <small>[/t &lt;Transform List>]</small> <small>[/g &lt;Language ID>]</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advertises a <a href="produc.htm">produc</a>t - m to all <a href="user.htm">user</a>s, u to <a href="curr.htm">curr</a>ent <a href="user.htm">user</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/un<a href="install.htm">install</a> | /x> &lt;<a href="produc.htm">Produc</a>t.<a href="msi.htm">msi</a> | <a href="produc.htm">Produc</a>tCode><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un<a href="install.htm">install</a>s the <a href="produc.htm">produc</a>t<br/>
+Display Options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/quiet<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quiet <a href="mod.htm">mod</a>e, no <a href="user.htm">user</a> interaction<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/<a href="pass.htm">pass</a>ive<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unattended <a href="mod.htm">mod</a>e - progress bar only<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/q<small>[n|b|r|f]</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets <a href="user.htm">user</a> interface level<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n - No UI<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b - Basic UI<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r - Reduced UI<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f - Full UI <small>(default)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/help<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help information<br/>
+Re<a href="start.htm">start</a> Options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/nore<a href="start.htm">start</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do not re<a href="start.htm">start</a> after the <a href="install.htm">install</a>ation is complete<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/promptre<a href="start.htm">start</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prompts the <a href="user.htm">user</a> for re<a href="start.htm">start</a> if necessary<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/forcere<a href="start.htm">start</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Always re<a href="start.htm">start</a> the <a href="compu.htm">compu</a>ter after <a href="install.htm">install</a>ation<br/>
+Logging Options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/l<small>[i|w|e|a|r|u|c|m|o|p|v|x|+|!|*]</small> &lt;Log<a href="file.htm">File</a>><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i - <a href="stat.htm">Stat</a>us messages<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w - Nonfatal warnings<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e - All error messages<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a - <a href="start.htm">Start</a> up of actions<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r - Action-specific records<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u - <a href="user.htm">User</a> requests<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c - Initial UI parameters<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m - Out-of-memory or fatal exit information<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o - Out-of-<a href="disk.htm">disk</a>-<a href="spac.htm">spac</a>e messages<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p - Terminal <a href="proper.htm">proper</a>ties<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v - Verbose output<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x - Extra debugging information<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ - Append to existing log <a href="file.htm">file</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;! - Flush each line to the log<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* - Log all information, except for v and x options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/log &lt;Log<a href="file.htm">File</a>><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equivalent of /l* &lt;Log<a href="file.htm">File</a>><br/>
+Update Options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/update &lt;Update1.msp><small>[;Update2.msp]</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Applies update<small>(s)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/un<a href="install.htm">install</a> &lt;PatchCodeGuid><small>[;Update2.msp]</small> /<a href="pack.htm">pack</a>age &lt;<a href="produc.htm">Produc</a>t.<a href="msi.htm">msi</a> | <a href="produc.htm">Produc</a>tCode><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove update<small>(s)</small> for a <a href="produc.htm">produc</a>t<br/>
+Repair Options<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;/f<small>[p|e|c|m|s|o|d|a|u|v]</small> &lt;<a href="produc.htm">Produc</a>t.<a href="msi.htm">msi</a> | <a href="produc.htm">Produc</a>tCode><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repairs a <a href="produc.htm">produc</a>t<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p - only if <a href="file.htm">file</a> is missing<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o - if <a href="file.htm">file</a> is missing or an older version is <a href="install.htm">install</a>ed <small>(default)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e - if <a href="file.htm">file</a> is missing or an equal or older version is <a href="install.htm">install</a>ed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d - if <a href="file.htm">file</a> is missing or a <a href="diff.htm">diff</a>e<a href="rent.htm">rent</a> version is <a href="install.htm">install</a>ed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c - if <a href="file.htm">file</a> is missing or checksum does not match the <a href="calc.htm">calc</a>ulated value<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a - forces all <a href="file.htm">file</a>s to be re<a href="install.htm">install</a>ed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u - all required <a href="user.htm">user</a>-specific registry entries <small>(default)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m - all required <a href="compu.htm">compu</a>ter-specific registry entries <small>(default)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s - all existing shortcuts <small>(default)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v - runs from <a href="sourc.htm">sourc</a>e and recaches local <a href="pack.htm">pack</a>age<br/>
+Setting Public <a href="proper.htm">Proper</a>ties<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<small>[<a href="proper.htm">PROPER</a>TY=<a href="proper.htm">Proper</a>tyValue]</small><br/>
+'"</span><br/>
+<br/>
+<a class="ext" href="http://msi2xml.sf.net">msi2xml.sf.net</a> <span class="quot2">>>The command line tool <a href="msi.htm">msi</a>2xml converts Windows <a href="install.htm">Install</a>er Databases <small>(.<a href="msi.htm">msi</a> / .msm)</small> to text based XML <a href="file.htm">file</a>s.&nbsp;&nbsp;The complementary tool xml2msi r<a href="econ.htm">econ</a>structs the .<a href="msi.htm">msi</a> / .msm from the XML <a href="file.htm">file</a>.</span><br/>
+<br/>
+<a class="ext" href="http://izfree.sf.net">izfree.sf.net</a> <span class="quot2">>>This is iz<a href="free.htm">free</a> version 1.1, a collection of <a href="free.htm">free</a> tools for authoring Windows <a href="install.htm">Install</a>er .<a href="msi.htm">MSI</a> <a href="install.htm">install</a>ation <a href="pack.htm">pack</a>ages. iz<a href="free.htm">free</a> is designed for <a href="use.htm">use</a> in conjunction with the Orca database <a href="edit.htm">edit</a>or included in the Microsoft Platform <a href="sdk.htm">SDK</a>.</span><br/>
+<br/>
+<a class="ext" href="http://MSI.list.files">MSI.list.files</a><br/>
+<br/>
+<a class="ext" href="http://technet.microsoft.com/en-us/library/cc766272.aspx">http://technet.microsoft.com/en-us/library/cc766272.aspx</a> <span class="quot2">>> OCSetup is available as <a href="part.htm">part</a> of the Windows Vista<small>(R)</small> and Windows Server<small>(R)</small> 2008 <a href="operating system.htm">operating system</a>. This tool replaces Sysocmgr.exe, which is included in the Windows XP and Windows Server 2003 <a href="operating system.htm">operating system</a>s.</span><br/>
+<span class="quot">"'<br/>
+You can <a href="use.htm">use</a> OCSetup.exe on a <a href="compu.htm">compu</a>ter running Windows Vista or Windows Server 2008 to <a href="install.htm">install</a> or un<a href="install.htm">install</a>:<br/>
+<br/>
+&nbsp;&nbsp;&nbsp; * Microsoft System <a href="install.htm">Install</a>er <small>(<a href="msi.htm">MSI</a>)</small> <a href="file.htm">file</a>s that are <a href="pass.htm">pass</a>ed to the Windows <a href="install.htm">Install</a>er service <small>(<a href="msi.htm">MSI</a>Exec.exe)</small><br/>
+&nbsp;&nbsp;&nbsp; * Component-Based Servicing <small>(CBS)</small> components that are <a href="pass.htm">pass</a>ed to <a href="pack.htm">Pack</a>age Manager<br/>
+&nbsp;&nbsp;&nbsp; * CBS or <a href="msi.htm">MSI</a> <a href="pack.htm">pack</a>ages that have an associated custom <a href="install.htm">install</a>er .exe <a href="file.htm">file</a><br/>
+'"</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://msdn.microsoft.com/en-us/library/aa372865(VS.85).aspx">http://msdn.microsoft.com/en-us/library/aa372865(VS.85).aspx</a><br/>
+<br/>
+<br/>
+<br/>
+cboles<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+Joined: Dec 06, 2008<br/>
+Posts: 1<br/>
+<br/>
+<br/>
+<br/>
+<a class="ext" href="http://help.wugnet.com/vista/repair-broken-Windows-Installerftopic-111124-days0-orderasc-8.html">http://help.wugnet.com/vista/repair-broken-Windows-Installerftopic-111124-days0-orderasc-8.html</a><br/>
+<span class="quot">"'<br/>
+<small>[Post]</small> <small>(Msg. 14)</small> Posted: Sat Dec 06, 2008 2:40 pm<br/>
+Post subject: A fix... at least for x64 <a href="user.htm">user</a>s <small>[Login to view extended <a href="thread.htm">thread</a> Info.]</small><br/>
+<br/>
+I have been plagued with this <a href="install.htm">install</a>er problem for almost a year on my x64 <a href="install.htm">install</a> of Vista. I have read many forums for solutions, but none of them have <a href="work.htm">work</a>ed. I spent some time today looking at my event logs and thinking about the problem:<br/>
+<br/>
+<span class="bullet">*</span> my problem only occurs when <a href="install.htm">install</a>ing true 64-bit applications<br/>
+<span class="bullet">*</span> the event log indicates that <a href="msi.htm">msi</a>exec in SysWow64 is failing<br/>
+<br/>
+I though about it, and the misexec.exe in SysWow64 is for 32-bit <a href="install.htm">install</a>s, not 64-bit <a href="install.htm">install</a>s, so it would seem that the wrong <a href="install.htm">install</a>er version is being run... Looking at the registry under<br/>
+<br/>
+<span class="shell">$ reg query HKLM\SYSTEM\<a href="curr.htm">Curr</a>entControlSet\Services\<a href="msi.htm">MSI</a>Server /s</span><br/>
+<br/>
+I found the following suspicious entry<br/>
+<br/>
+SysWow64 = 1<br/>
+<br/>
+I <a href="delet.htm">delet</a>ed this entry, and now my 64-bit <a href="install.htm">install</a>s are <a href="work.htm">work</a>ing! I guess the reg <a href="key.htm">key</a> is <a href="use.htm">use</a>d to force the 32-bit version of misexec to run even if the <a href="install.htm">install</a> is 64-bit. I'm not sure where it got set, but removing it finally fixed my problems. Hope this helps someone else!<br/>
+<br/>
+Colby<br/>
+'"</span><br/>
+<br/>
+<br/>
+<br/>
+<span class="shell">$ reg query HKLM\SOFTWARE\Microsoft\Windows\<a href="curr.htm">Curr</a>entVersion\Un<a href="install.htm">install</a> /s</span><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+----<br/>
+<a class="ext" href="http://Ranbeer.WordPress.com/2008/09/14/making-upgrade-msi-using-wix">Ranbeer.WordPress.com/2008/09/14/making-upgrade-msi-using-wix</a><br/>
+<br/>
+&lt;<a href="produc.htm">Produc</a>t Id='PUT-A-<a href="gui.htm">GUI</a>D' Name='YOUR <a href="produc.htm">PRODUC</a>T NAME'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Language='1033' Version='1.1.9.17'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UpgradeCode='PUT-A-<a href="gui.htm">GUI</a>D-FOR-UPGRADE-CODE'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manufacturer='MANUFACTURER'><br/>
+<br/>
+&nbsp; &lt;<a href="pack.htm">Pack</a>age Id='PUT-A-<a href="gui.htm">GUI</a>D' Description='YOUR <a href="produc.htm">PRODUC</a>T DESCRIPTION'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Comments='Version 1.1.9.17' Manufacturer='YOUR MANUFACTURER'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="install.htm">Install</a>erVersion='200' Compressed='yes'/><br/>
+<br/>
+&nbsp; &lt;Upgrade Id='A-<a href="gui.htm">GUI</a>D-SHOULD-BE-SAME-AS-UPGRADE-CODE'><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;UpgradeVersion OnlyDetect='no' <a href="proper.htm">Proper</a>ty='PROJECT_UPGRADE'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maximum='1.1.9.17' IncludeMaximum='no' RemoveFeatures='all'/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;<a href="proper.htm">Proper</a>ty Id='PROJECT_UPGRADE' Secure='yes'/><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;UpgradeVersion OnlyDetect='yes' <a href="proper.htm">Proper</a>ty='PROJECT_DOWNGRADE'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimum='1.1.9.17' IncludeMinimum='no'/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;<a href="proper.htm">Proper</a>ty Id='PROJECT_DOWNGRADE' Secure='yes'/><br/>
+<br/>
+&nbsp; &lt;/Upgrade><br/>
+<br/>
+&nbsp; &lt;CustomAction Id='NoDownGrade' Error='A later version of <small>[<a href="produc.htm">Produc</a>tName]</small> is already <a href="install.htm">install</a>ed.' /><br/>
+<br/>
+&nbsp; &lt;<a href="install.htm">Install</a>ExecuteSequence><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;LaunchConditions After='AppSearch'>&lt;/LaunchConditions><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;Custom Action='NoDownGrade' After='FindRelated<a href="produc.htm">Produc</a>ts'><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!<small>[CDATA<small>[PROJECT_DOWNGRADE]</small>]</small>>&lt;/Custom><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;RemoveExisting<a href="produc.htm">Produc</a>ts After='<a href="install.htm">Install</a>Finalize'/><br/>
+<br/>
+&nbsp; &lt;/<a href="install.htm">Install</a>ExecuteSequence><br/>
+&lt;/<a href="produc.htm">Produc</a>t><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/msi">msi</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

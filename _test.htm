@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>_test  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> ASCII, compete, qualify<br/>
+<br/>
+Testing ./.code/etym.el<br/>
+<br/>
+<span class="h1">=<a href="file.htm">File</a>names</span><br/>
+<br/>
+<span class="h3">===Local</span><br/>
+Link absolute *nix paths such as /usr/bin <small>(<a href="brows.htm">brows</a>er can't resolve this on Windows)</small><br/>
+Link relative paths such as or ./.code/preferred.css or ../onedirlower<br/>
+Link UNC paths such as <a class="ext" href="file:///\\Some-SMB-Server\ShareName">\\Some-SMB-Server\ShareName</a><br/>
+link with <a href="spac.htm">spac</a>es using quotation marks: <a class="ext" href="file:///c:\Program Files">"c:\Program Files"</a>, <a class="ext" href="file:///\\Some-SMB-Server\Share Name\sub folder">"\\Some-SMB-Server\Share Name\sub folder"</a><br/>
+<br/>
+Link any protocol: <a class="ext" href="file://">file://</a> <a class="ext" href="ftp://">ftp://</a> <a class="ext" href="http://">http://</a> <a class="ext" href="https://">https://</a> <a class="ext" href="mail://">mail://</a> <a class="ext" href="torrent://">torrent://</a> <a class="ext" href="ed2k://">ed2k://</a> <a class="ext" href="p2p://">p2p://</a><br/>
+<br/>
+<span class="h2">==External URL examples</span><br/>
+<a class="ext" href="http://COMMAND.COM">COMMAND.COM</a>&nbsp;&nbsp;<span class="cmnt">;;This is ambiguous because it is both a valid <a href="file.htm">file</a>name and a URL.</span><br/>
+<a class="ext" href="ftp://127.0.0.1">ftp://127.0.0.1</a> <span class="cmnt">;;any letters followed by :// will link to that protocol</span><br/>
+// is a c++ single-line comment<br/>
+Floating-point numbers such as 1.0 should not link as a URL<br/>
+IP addresses require protocol be explicitly specified:&nbsp;&nbsp;<a class="ext" href="https://192.168.1.2">https://192.168.1.2</a><br/>
+<br/>
+<a class="ext" href="http://IPFrontline.com/depts/article.asp?id=10139&deptid=6">IPFrontline.com/depts/article.asp?id=10139&deptid=6</a><br/>
+------------------------------------------^this ampersand is not <a href="proper.htm">proper</a>ly escaped.<br/>
+<br/>
+Supported domain names<br/>
+<a class="ext" href="http://a.aero">a.aero</a> <a class="ext" href="http://a.at">a.at</a> <a class="ext" href="http://a.au">a.au</a> <a class="ext" href="http://a.be">a.be</a> <a class="ext" href="http://a.biz">a.biz</a> <a class="ext" href="http://a.ca">a.ca</a> <a class="ext" href="http://a.cat">a.cat</a> <a class="ext" href="http://a.cc">a.cc</a> <a class="ext" href="http://a.ch">a.ch</a> <a class="ext" href="http://a.com">a.com</a> <a class="ext" href="http://a.coop">a.coop</a> <a class="ext" href="http://a.cx">a.cx</a> <a class="ext" href="http://a.cz">a.cz</a> <a class="ext" href="http://a.da">a.da</a> <a class="ext" href="http://a.de">a.de</a> <a class="ext" href="http://a.dk">a.dk</a> <a class="ext" href="http://a.edu">a.edu</a> <a class="ext" href="http://a.es">a.es</a> <a class="ext" href="http://a.eu">a.eu</a> <a class="ext" href="http://a.fi">a.fi</a> <a class="ext" href="http://a.fr">a.fr</a> <a class="ext" href="http://a.gov">a.gov</a> <a class="ext" href="http://a.hu">a.hu</a> <a class="ext" href="http://a.ie">a.ie</a> <a class="ext" href="http://a.il">a.il</a> <a class="ext" href="http://a.im">a.im</a> <a class="ext" href="http://a.in">a.in</a> <a class="ext" href="http://a.it">a.it</a> <a class="ext" href="http://a.info">a.info</a> <a class="ext" href="http://a.int">a.int</a> <a class="ext" href="http://a.jp">a.jp</a> <a class="ext" href="http://a.jobs">a.jobs</a> <a class="ext" href="http://a.lt">a.lt</a> <a class="ext" href="http://a.mil">a.mil</a> <a class="ext" href="http://a.mobi">a.mobi</a> <a class="ext" href="http://a.museum">a.museum</a> <a class="ext" href="http://a.name">a.name</a> <a class="ext" href="http://a.net">a.net</a> <a class="ext" href="http://a.nl">a.nl</a> <a class="ext" href="http://a.nu">a.nu</a> <a class="ext" href="http://a.nz">a.nz</a> <a class="ext" href="http://a.org">a.org</a> <a class="ext" href="http://a.pl">a.pl</a> <a class="ext" href="http://a.pro">a.pro</a> <a class="ext" href="http://a.pt">a.pt</a> <a class="ext" href="http://a.se">a.se</a> <a class="ext" href="http://a.sk">a.sk</a> <a class="ext" href="http://a.tel">a.tel</a> <a class="ext" href="http://a.travel">a.travel</a> <a class="ext" href="http://a.tv">a.tv</a> <a class="ext" href="http://a.uk">a.uk</a> <a class="ext" href="http://a.us">a.us</a> <a class="ext" href="http://a.ws">a.ws</a><br/>
+<br/>
+<br/>
+<br/>
+<span class="h1">=UTF-8 test</span><br/>
+Epistemology from Greek: επιστήμη - episteme, "<a href="know.htm">know</a>ledge" + λόγος, "logos"<br/>
+<br/>
+<br/>
+<span class="h1">=Any column:</span><br/>
+&nbsp;<span class="quot2">>> e<a href="mail.htm">mail</a> multi-quote</span><br/>
+&nbsp;<span class="quot3">>>> e<a href="mail.htm">mail</a> multi-quote</span><br/>
+&nbsp;<span class="quot3">>>>> e<a href="mail.htm">mail</a> multi-quote</span><br/>
+&nbsp;<span class="quot">"'multi-<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line quote'"</span><br/>
+<br/>
+&nbsp;&lt;i><span class="itlc">italic</span>&lt;/i><br/>
+&nbsp;&lt;b><span class="bold">bold</span>&lt;/b><br/>
+<br/>
+&nbsp;# <a href="shell.htm">shell</a> comment<br/>
+&nbsp;<span class="cmnt">;;Lisp comment</span><br/>
+&nbsp;/* c style multi-<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line comment*/<br/>
+&nbsp;//c style single-line comment<br/>
+<br/>
+&nbsp;<small>(paren <small>[paren <small>{paren}</small>]</small>)</small><br/>
+<br/>
+<span class="h1">=Beginning of Line <small>(BOL)</small>:</span><br/>
+<span class="quot">> single e<a href="mail.htm">mail</a> quote</span><br/>
+<span class="shell">$ <a href="shell.htm">shell</a> command</span><br/>
+<hr/><span class="date">Jan-23-2008:</span> date format<br/>
+<span class="rel">Related:</span> to categorize<br/>
+<br/>
+<span class="h3">===Bullets:</span><br/>
+<span class="bullet">*</span> milk<br/>
+<span class="bullet">+</span> honey<br/>
+<span class="bullet">.</span> nuts<br/>
+<span class="bullet">:</span> berries<br/>
+<br/>
+<br/>
+<span class="h2">==TAB Alignment</span><br/>
+<a class="ext" href="http://Wikipedia.org/wiki/Tab_key#Tabs_in_HTML">Wikipedia.org/wiki/Tab_key#Tabs_in_HTML</a> <span class="quot2">>> 2. All tabs <small>(U+0009)</small> are rendered as a horizontal shift that lines up the <a href="start.htm">start</a> edge of the next glyph with the next tab stop. Tab stops occur at points that are mutiples of 8 times the width of a <a href="spac.htm">spac</a>e <small>(U+0020)</small> rendered in the block's font from the block's <a href="start.htm">start</a>ing content edge.</span><br/>
+<br/>
+This group should align at column 5<br/>
+____v<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;|TAB<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|SPC TAB<br/>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;|SPC SPC TAB<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|SPC SPC SPC TAB<br/>
+----^<br/>
+<br/>
+This group should align at column 9<br/>
+________v<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|TAB TAB<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;|SPC TAB SPC TAB<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;|SPC SPC SPC TAB SPC SPC SPC TAB<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |SPC SPC SPC SPC SPC SPC SPC SPC<br/>
+--------^<br/>
+<br/>
+<br/>
+<br/>
+<span class="h3">===Entities</span><br/>
+&lt; &amp;lt;<br/>
+&amp; &amp;amp; not correctly escaped within URLs<br/>
+<br/>
+<br/>
+<span class="h1">=Headings <small>(h1)</small></span><br/>
+<span class="h2">==Sub Heading <small>(h2)</small></span><br/>
+<span class="h3">===Sub Sub Heading <small>(h3)</small></span><br/>
+<span class="h4">====Sub Sub Sub Heading <small>(h4)</small></span><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/_test">_test</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

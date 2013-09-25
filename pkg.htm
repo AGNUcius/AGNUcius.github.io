@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>pkg  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> <a href="gnunix.htm">GNUnix</a>, LazyLoad, <a href="pack.htm">pack</a>, <a href="pkg.htm">pkg</a>mgr<br/>
+<br/>
+See ~/.bash_aliases for most recent version of these commands<br/>
+<br/>
+<br/>
+The "<a href="pkg.htm">pkg</a>" project attempts to hide <a href="diff.htm">diff</a>erences among the various <a href="pack.htm">pack</a>age management tools.<br/>
+<br/>
+Update all <a href="install.htm">install</a>ed software:<br/>
+<span class="shell">$ alias <a href="pkg.up.htm">pkg.up</a>='sudo apt-get update; sudo apt-get upgrade'</span><br/>
+<br/>
+List all <a href="install.htm">install</a>ed software:<br/>
+<span class="shell">$ alias <a href="pkg.htm">pkg</a>.list='dpkg -l'</span><br/>
+<br/>
+Search through all available software:<br/>
+<span class="shell">$ alias <a class="ext" href="http://pkg.find">pkg.find</a></span><br/>
+<br/>
+<a href="install.htm">Install</a> by registered NAME:<br/>
+<span class="shell">$ alias <a href="pkg.add.htm">pkg.add</a></span><br/>
+<br/>
+<a href="install.htm">Install</a> through unregistered <a href="file.htm">FILE</a>:<br/>
+<br/>
+<span class="shell">$ alias <a class="ext" href="http://pkg.del">pkg.del</a> sudo apt-get --purge remove</span><br/>
+<br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/pkg">pkg</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

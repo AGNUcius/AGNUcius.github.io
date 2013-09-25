@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>gnunix  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> coreutils, desk, distro, <a href="gnuin.htm">GNUin</a>, LazyLoad, <a href="menu.htm">menu</a>, MiniMacs, <a href="operating system.htm">Operating System</a>, tools<br/>
+<br/>
+<a class="ext" href="http://GNUnix.sf.net">GNUnix.sf.net</a>, <a class="ext" href="http://github.com/AGNUcius/GNUnix">github.com/AGNUcius/GNUnix</a><br/>
+<br/>
+<span class="quot">"'<br/>
+<a href="gnunix.htm">GNUnix</a> is not Linux<br/>
+<br/>
+<a href="gnunix.htm">GNUnix</a> is an <a href="operating system.htm">Operating System</a> construction kit<br/>
+that <a href="start.htm">start</a>s as a very lightweight distribution<br/>
+then morphs into whatever you want during <a href="use.htm">use</a>.<br/>
+<br/>
+For now it is just a 'mini' <a href="install.htm">install</a> of UBUNTU<br/>
+Precise 12.04 with IceWM and Chromium.<br/>
+<br/>
+<br/>
+The core <a href="ide.htm">ide</a>a <small>(that is not yet implemented)</small> is<br/>
+"<a href="install.htm">Install</a> And Launch When Attempted" <small>(IALWA)</small><br/>
+which <a href="mak.htm">mak</a>es finding and using and fixing the<br/>
+programs you want much more easy and obvious.<br/>
+<br/>
+The high-level view of IALWA is a <a href="start.htm">Start</a>-<a href="menu.htm">Menu</a><br/>
+filled with all the applications you could ever<br/>
+possibly <a href="install.htm">install</a>, not yet actually <a href="install.htm">install</a>ed.<br/>
+<br/>
+There would be no separate <a href="pack.htm">pack</a>age-manager<br/>
+because the <a href="start.htm">Start</a>-<a href="menu.htm">Menu</a> seamlessly manages<br/>
+<a href="pack.htm">pack</a>ages and launches those same programs.<br/>
+<br/>
+Each entry might be slightly greyed-out if the<br/>
+app is not yet <a href="install.htm">install</a>ed.<br/>
+<br/>
+I envision the icons, reviews, screenshots,<br/>
+and other heavy data could be retrieved over<br/>
+the <a href="net.htm">net</a><a href="work.htm">work</a> <small>(and cached)</small> when the <a href="user.htm">user</a><br/>
+pauses over that <a href="menu.htm">menu</a> entry.<br/>
+<br/>
+Once the <a href="user.htm">user</a> tries to <a href="use.htm">use</a> that program, the<br/>
+<a href="pack.htm">pack</a>age-manager would be invoked to <a href="install.htm">install</a><br/>
+that <a href="pack.htm">pack</a>age and any dependencies, and then<br/>
+the program would be launched, and the <a href="menu.htm">menu</a><br/>
+entry would be updated to show it is <a href="install.htm">install</a>ed.<br/>
+<br/>
+Right-clicking the <a href="menu.htm">menu</a>-entry would allow the<br/>
+<a href="user.htm">user</a> to un<a href="install.htm">install</a> or configure or complain about<br/>
+bugs or suggest new features, or go to an<br/>
+online forum, etc.<br/>
+<br/>
+The window-manager should also be enhanced<br/>
+to add another button <small>(maybe a '+')</small> that would<br/>
+be another way to access the features given<br/>
+when right-clicking the <a href="menu.htm">menu</a>-entry.<br/>
+<br/>
+A global configuration <a href="file.htm">file</a> would contain settings<br/>
+such as "prompt before <a href="install.htm">install</a>", "un<a href="install.htm">install</a> app<br/>
+after X days of disuse", "sort <a href="menu.htm">menu</a> entries<br/>
+by <a href="pop.htm">pop</a>ularity", etc.<br/>
+'"</span><br/>
+<br/>
+<br/>
+<br/>
+<span class="h2">==Goals</span><br/>
+Minimal re<a href="sourc.htm">sourc</a>e <a href="use.htm">use</a> through JIT download, <a href="install.htm">install</a>, <a href="start.htm">start</a>.<br/>
+<br/>
+Auto-hibernate procs by writing "resident memory" and handle list to <a href="disk.htm">disk</a> allowing thousands of procs to remain forever running, even across re<a href="boot.htm">boot</a>s.<br/>
+<br/>
+Some kind of dashboard to display <a href="compu.htm">compu</a>ter health and help such as:<br/>
+&nbsp; Process interrogation and control: htop, xosview, xload<br/>
+&nbsp; CPU schedule, split, cluster<br/>
+&nbsp; Memory Allocation and <a href="protect.htm">Protect</a>ion<br/>
+&nbsp; <a href="disk.htm">Disk</a> <a href="stor.htm">Stor</a>age, Throughput, Temperature: <a class="ext" href="http://CoreDump.Free.fr/linux/hddtemp.php">CoreDump.Free.fr/linux/hddtemp.php</a><br/>
+&nbsp; <a href="net.htm">Net</a><a href="work.htm">work</a> Throughput:<br/>
+&nbsp; <a href="key.htm">Key</a>board and API access<br/>
+<br/>
+<br/>
+The <a href="user.htm">user</a> downloads a very small, platform-specific <a href="install.htm">install</a>er to split the <a href="disk.htm">disk</a>.<br/>
+<br/>
+A minimal <a href="disk.htm">disk</a> <a href="imag.htm">imag</a>e <small>(with a low-performance 'universal' <a href="net.htm">net</a><a href="work.htm">work</a> driver or with all <a href="know.htm">know</a>n <a href="net.htm">net</a><a href="work.htm">work</a> drivers)</small> is then downloaded and written to the target <a href="part.htm">part</a>ition which is <small>(by default)</small> made <a href="boot.htm">boot</a>able from the containing OS.<br/>
+<br/>
+<a href="hard.htm">Hard</a>ware is probed during the first <small>(and anytime |SHIFT| is held during)</small> <a href="boot.htm">boot</a>; needed drivers are downloaded, <a href="install.htm">install</a>ed and <a href="start.htm">start</a>ed.<br/>
+<br/>
+The video card is switched to graphics <a href="mod.htm">mod</a>e very early and the login prompt appears while services <a href="start.htm">start</a> in the <a href="back.htm">back</a>ground.&nbsp;&nbsp;Default resolution and refresh rate are sensible and easily adjusted by right-clicking the desktop.<br/>
+<br/>
+New <a href="user.htm">user</a>s may create their <a href="own.htm">own</a> <small>(limited)</small> account with the <small>[New]</small> button at the login screen.<br/>
+<br/>
+Pressing the WindowKey or clicking the <small>[Star]</small> button displays a tree of software and media organized and sorted by community and/or personal rankings.&nbsp;&nbsp;Tools, toys, <a href="game.htm">game</a>s, movies, music, books, news, etc. are downloaded, <a href="install.htm">install</a>ed and executed only when selected.<br/>
+<br/>
+<a href="title.htm">Title</a>s appear slightly faded until <a href="install.htm">install</a>ed.&nbsp;&nbsp;When a choice is made, it is downloaded from local CD/DVD if available or through bit-tor<a href="rent.htm">rent</a> <a href="back.htm">back</a>ed by <a href="http.htm">HTTP</a> mirrors.<br/>
+<br/>
+The lightweight windowing system optionally captures and translates <a href="key.htm">key</a>strokes so input can be standardized across applications.&nbsp;&nbsp;Mixable themes include: CUA/Explorer, <a href="emacs.htm">Emacs</a>, vi, Norton Commander.<br/>
+<br/>
+Each application frame drawn by the window manager includes an extra button which helps this <a href="user.htm">user</a> read and write community News, Bugs, Updates, Help, Docs, Fix, Ratings, etc.<br/>
+<br/>
+<br/>
+<span class="h2">==Features</span><br/>
+Read+Write: e<a href="mail.htm">mail</a>, address book, <a href="note.htm">note</a>s, todo list, code<br/>
+Draw/<a href="paint.htm">Paint</a>: 2D, <a href="3d.htm">3D</a>, sketch, script, render<br/>
+<a href="remot.htm">Remot</a>e control other <a href="compu.htm">compu</a>ters: WakeOnLan, Re<a href="start.htm">start</a>, Shut off, Exec <a href="remot.htm">remot</a>e commands<br/>
+Share+Find+Copy <a href="file.htm">file</a>s from: SMB, NFS, <a href="vnc.htm">VNC</a>, RDP, <a href="ssh.htm">SSH</a>, Citrix ICA, Active Directory, <a href="work.htm">Work</a>groups, IP address ranges.<br/>
+Record and rePlay <a href="mac.htm">mac</a>ros <small>(AutoHotKey)</small><br/>
+View <a href="stat.htm">stat</a>us and plan of <a href="user.htm">User</a>s who reveal this info.<br/>
+<a href="edit.htm">Edit</a> <a href="curr.htm">curr</a>ently running programs<br/>
+<a href="edit.htm">Edit</a> <a href="start.htm">start</a>up of drivers, services and other programs and <a href="shell.htm">shell</a> extensions.<br/>
+<a href="edit.htm">Edit</a> <a href="install.htm">Install</a>ed Software<br/>
+View Event Log<br/>
+View clipboard<br/>
+<a href="edit.htm">Edit</a> Registry<br/>
+<br/>
+<br/>
+<span class="h2">==Global <a href="key.htm">key</a>s</span><br/>
+WindowKey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open 'root' <a href="menu.htm">menu</a><br/>
+Ctrl-Shift-ESC&nbsp;&nbsp;&nbsp;&nbsp;System <a href="moni.htm">Moni</a>tor<br/>
+Ctrl-Alt-Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.htm">Menu</a> to shutdown, logoff, re<a href="start.htm">start</a><br/>
+Ctrl-Alt-Bckspc&nbsp;&nbsp; <a href="menu.htm">Menu</a> to fix resolution, refresh rate, login portal<br/>
+<br/>
+WindowKey-e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="ext" href="http://PCManFM.sf.net">PCManFM.sf.net</a> or <a href="minemacs.htm">MinEmacs</a> lightweight <a href="disk.htm">disk</a> and <a href="net.htm">net</a> <a href="brows.htm">brows</a>er/<a href="edit.htm">edit</a>or<br/>
+WindowKey-r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a 'Run' prompt<br/>
+WindowKey-m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimize all windows<br/>
+<br/>
+<br/>
+A text <a href="file.htm">file</a> or maybe a directory of <a href="file.htm">file</a>s and subdirs <a href="use.htm">use</a>d describe the <a href="menu.htm">menu</a> layout and commands?<br/>
+<br/>
+<a href="mak.htm">Mak</a>e the directory /usr/local/<a href="gnunix.htm">gnunix</a> and put it at the *end* of our $PATH environment variable.&nbsp;&nbsp;Then fill /usr/local/<a href="gnunix.htm">gnunix</a> with small executable <a href="install.htm">install</a>ation scripts having the same name as the target command.&nbsp;&nbsp;When the <a href="user.htm">user</a> tries to run a program that is not yet <a href="install.htm">install</a>ed, it actually runs the <a href="install.htm">install</a>er instead.<br/>
+<br/>
+For example, /usr/local/<a href="gnunix.htm">gnunix</a>/xosview might look something like:<br/>
+<br/>
+__<br/>
+#!/bin/sh<br/>
+sudo apt-get <a href="install.htm">install</a> xosview<br/>
+xosview<br/>
+__<br/>
+<br/>
+Now, when the <a href="user.htm">user</a> attempts to run that program, the system will transpa<a href="rent.htm">rent</a>ly run the <a href="install.htm">install</a>er and then launch the program.&nbsp;&nbsp;The next time the program is called, the system will find the *<a href="real.htm">real</a>* executable earlier in $PATH and run it directly instead.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<span class="h2">==Long-term <a href="ide.htm">ide</a>as:</span><br/>
+The <a href="gui.htm">GUI</a> "Desktop" becomes a <a href="3d.htm">3D</a> looking first-person perspective with the same MOO text <a href="obj.htm">obj</a>ects represented as icons or <a href="mod.htm">mod</a>els.<br/>
+<br/>
+These <a href="obj.htm">obj</a>ects are manipulated through a right-click <a href="menu.htm">menu</a> or by 'applying' other <a href="obj.htm">obj</a>ects.<br/>
+<br/>
+The HUD contains gauges for CPU utilization, speed, heat; Memory load; fan speeds, <a href="disk.htm">disk</a> and <a href="net.htm">net</a> activity/load and errant processes or <a href="user.htm">user</a>s.<br/>
+<br/>
+Programs are grouped in rooms dedicated to high-level goals like janitor, <a href="mail.htm">mail</a>, music, TV, <a href="game.htm">game</a>s.<br/>
+<br/>
+<a href="compu.htm">Compu</a>ter <a href="hard.htm">hard</a>ware is represented by a <a href="3d.htm">3D</a> <a href="mod.htm">mod</a>el you may <a href="admin.htm">admin</a>ister directly.<br/>
+<br/>
+<a href="net.htm">Net</a><a href="work.htm">work</a>ed peers may share read, write, execute access to their <a href="file.htm">file</a>s and display.<br/>
+<br/>
+Security may appear as doors or windows that require a <a href="key.htm">key</a> or tool to open.<br/>
+<br/>
+A portable radio or TV can be added to your HUD.&nbsp;&nbsp;Changing channels lets you <a href="brows.htm">brows</a>e through <a href="free.htm">Free</a> audio and video blogs or feeds.<br/>
+<br/>
+<br/>
+<br/>
+<a class="ext" href="http://KMandla.WordPress.com/2009/08/09/idesk-completes-the-look">KMandla.WordPress.com/2009/08/09/idesk-completes-the-look</a><br/>
+<br/>
+<a class="ext" href="http://serverfault.com/questions/24323/gentoo-linux-useful-utilities">http://serverfault.com/questions/24323/gentoo-linux-useful-utilities</a><br/>
+<a class="ext" href="http://serverfault.com/questions/9936/is-this-the-optimal-procedure-to-upgrade-gentoo-linux">http://serverfault.com/questions/9936/is-this-the-optimal-procedure-to-upgrade-gentoo-linux</a><br/>
+<br/>
+<a class="ext" href="http://Porthole.sf.net">Porthole.sf.net</a> <span class="quot2">>>Porthole is a GTK-based front-end for Portage <small>(the Gentoo <a href="pack.htm">pack</a>age management system)</small>. It features a hierarchical view of <a href="pack.htm">pack</a>ages and supports fast searches and dependency <a href="calc.htm">calc</a>ulations. Porthole <a href="work.htm">work</a>s mainly by running "emerge" commands in its <a href="own.htm">own</a> terminal window, and supports most emerge operations.</span><br/>
+<br/>
+<span class="h4">====<a href="mount.htm">Mount</a> VBox "Shared Folders"</span><br/>
+<a href="install.htm">Install</a> Dynamic Kernel <a href="mod.htm">Mod</a>ule Support <small>(DKMS)</small>:<br/>
+<span class="shell">$ <a href="pkg.add.htm">pkg.add</a> dkms</span><br/>
+<br/>
+Re<a href="boot.htm">boot</a> the <a href="mac.htm">mac</a>hine.<br/>
+<br/>
+<a href="install.htm">Install</a> VBox "Guest Additions"<br/>
+<br/>
+<br/>
+<span class="h4">====X Window</span><br/>
+The new <a class="ext" href="http://X.Org">X.Org</a> creates a much smaller /etc/X11/xorg.conf that is easier to understand.<br/>
+<br/>
+But a <a href="virt.htm">virt</a>ual desktop larger that their <a href="real.htm">real</a> resolution is un<a href="work.htm">work</a>able!<br/>
+<span class="shell">$ sudo <a href="emacs.htm">emacs</a> /etc/X11/xorg.conf #force X11 to one resolution</span><br/>
+<br/>
+<a href="sect.htm">Sect</a>ion InputDevice<br/>
+<span class="bullet">+</span> add Option "XkbOptions" "altwin:super_win"<br/>
+End<a href="sect.htm">Sect</a>ion<br/>
+<br/>
+<a href="sect.htm">Sect</a>ion "Screen"<br/>
+<span class="bullet">+</span>&nbsp;&nbsp;&nbsp;&nbsp;DefaultDepth&nbsp;&nbsp;&nbsp;&nbsp; 24<br/>
+<span class="bullet">+</span>&nbsp;&nbsp;&nbsp;&nbsp;Sub<a href="sect.htm">Sect</a>ion "Display"<br/>
+<span class="bullet">+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depth&nbsp;&nbsp;&nbsp;&nbsp; 24<br/>
+<span class="bullet">+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mod.htm">Mod</a>es "1024x768"<br/>
+<span class="bullet">+</span>&nbsp;&nbsp;&nbsp;&nbsp;EndSub<a href="sect.htm">Sect</a>ion<br/>
+End<a href="sect.htm">Sect</a>ion<br/>
+<br/>
+<br/>
+Documents: Ted, Abiword, <a class="ext" href="http://Scribus.net">Scribus.net</a>, Open Office Writer<br/>
+<a href="html.htm">HTML</a>: <a class="ext" href="http://Kompozer.net">Kompozer.net</a>, <a class="ext" href="http://Bluefish.openoffice.nl">Bluefish.openoffice.nl</a><br/>
+Record Desktop: <a class="ext" href="http://Shutter-Project.org">Shutter-Project.org</a>, recordMyDesktop, <a class="ext" href="http://DemoHelper.GoogleCode.com">DemoHelper.GoogleCode.com</a><br/>
+Page Layout: <a class="ext" href="http://www.Scribus.net">www.Scribus.net</a>, <a class="ext" href="http://FinalPage.sf.net">FinalPage.sf.net</a><br/>
+<a href="3d.htm">3D</a> <a href="mod.htm">Mod</a>eling: <a class="ext" href="http://K-3D.org">K-3D.org</a>, <a class="ext" href="http://Blender.org">Blender.org</a><br/>
+<a href="paint.htm">Paint</a>: mt<a href="paint.htm">paint</a>, x<a href="paint.htm">paint</a>, Tux<a href="paint.htm">Paint</a>, InkScapeLite, <a class="ext" href="http://Al.chemy.org">Al.chemy.org</a>, InkScape, XaraXtreme, GIMP<br/>
+&nbsp;Color: grabc, gcolor2<br/>
+<a href="hex.htm">Hex</a>: Mad<a href="edit.htm">Edit</a>, HTE, biew, Q<a href="emacs.htm">Emacs</a>, Heme<br/>
+<a href="cad.htm">CAD</a>:<br/>
+CD/DVD: DVDAuthor, dvd+rwtools, pburn, grafburn, cdrtools/wodim, cdw<br/>
+ISO: <a href="mount.htm">Mount</a>, Create, Extract, etc.<br/>
+Music: ripoff, asunder, cdparanoia<br/>
+Todo: lxtask, pschedule<br/>
+Budget: <a class="ext" href="http://GNUCash.org">GNUCash.org</a>, home<a href="bank.htm">bank</a>, expensetracker<br/>
+<br/>
+Chat: <a class="ext" href="http://pidgin.im">pidgin.im</a>, <a class="ext" href="http://PSYC.eu">PSYC.eu</a><br/>
+<a href="mail.htm">Mail</a>: ThunderBird, Simple<a href="mail.htm">Mail</a><br/>
+FTP: <a href="file.htm">File</a>Zilla, gcurl, urlgfe, xwget, pwget, gcurl<br/>
+WWW: dillo, Firefox + FlashBlock + AdBlockPlus + NoScript + Hi<a href="stor.htm">stor</a>y, Gnash or flashplayer<br/>
+<a href="remot.htm">Remot</a>e Control: Grdc, <a href="free.htm">Free</a>NX, <a href="vnc.htm">VNC</a>, rdesktop, tsclient, Synergy2, WOL<br/>
+P2P, Tor<a href="rent.htm">rent</a>: aMule, emesene, gSTM, deluge, ctor<a href="rent.htm">rent</a>, pctor<a href="rent.htm">rent</a>, transmission_gtk<br/>
+<br/>
+<a href="admin.htm">Admin</a>istration<br/>
+Audio<br/>
+Business and <a href="produc.htm">produc</a>tivity<br/>
+<a href="calc.htm">Calc</a>ulator: <a class="ext" href="http://SpeedCrunch.org">SpeedCrunch.org</a>, y<a href="calc.htm">calc</a>, galculator, <a href="calc.htm">calc</a>oo, cgtk<a href="calc.htm">calc</a><br/>
+Database<br/>
+Education<br/>
+E<a href="mail.htm">mail</a>:<br/>
+Archiver: <a class="ext" href="http://k7z.GoogleCode.net">k7z.GoogleCode.net</a><br/>
+<a href="pic.htm">Pic</a>ture View: xzgv, <a class="ext" href="http://Mirage.berliOS.de">Mirage.berliOS.de</a>, gpicview, <a class="ext" href="http://zevv.nl/play/code/glview">zevv.nl/play/code/glview</a>, <a class="ext" href="http://Guichaz.Free.fr/gliv">Guichaz.Free.fr/gliv</a>, aview, flphoto, g<a href="imag.htm">imag</a>eview, gqview<br/>
+Hobbies<br/>
+Interface<br/>
+Internet apps<br/>
+<a href="liv.htm">Liv</a>e communications: chat, video conferencing, phone<br/>
+Localization<br/>
+Mathematics<br/>
+Printing<br/>
+Science<br/>
+Security<br/>
+Software Dev <small>(<a href="ide.htm">IDE</a>)</small>: <a class="ext" href="http://CodeBlocks.org">CodeBlocks.org</a>, <a class="ext" href="http://wxDsgn.sf.net">wxDsgn.sf.net</a>, <a class="ext" href="http://UltimatePP.org">UltimatePP.org</a>, <a class="ext" href="http://CodeLite.org">CodeLite.org</a>, <a class="ext" href="http://Geany.org">Geany.org</a><br/>
+Text <a href="edit.htm">Edit</a>ors: beaver, a<a href="edit.htm">edit</a>, geany, z<a href="edit.htm">edit</a>, <a href="emacs.htm">Emacs</a>, vi, <a href="pic.htm">pic</a>o, nano, teagtk<br/>
+<a href="web.htm">Web</a> authoring:<br/>
+<br/>
+<br/>
+AUTO:<br/>
+&nbsp;<a href="mount.htm">mount</a> volumes<br/>
+&nbsp;<a href="brows.htm">brows</a>e for <a href="net.htm">net</a><a href="work.htm">work</a> NSF or SMB shares: pnethood, <a class="ext" href="http://AVAHI.org">AVAHI.org</a><br/>
+<br/>
+<br/>
+Play<br/>
+&nbsp;Audio CD: x<a href="free.htm">free</a>cd, cdp<br/>
+&nbsp;<a href="game.htm">Game</a>s: xsoldier, rubix<br/>
+<br/>
+<a href="admin.htm">Admin</a>ister: xlock, slock<br/>
+&nbsp;Logs:<br/>
+&nbsp;<a href="file.htm">File</a>: emelFM2, PCManFM, xfe, Thunar, rox, autoconnect<br/>
+&nbsp;Find/Search: turma, zfind, pfind<br/>
+&nbsp;<a href="hard.htm">Hard</a>: <a href="usb.htm">usb</a>view, lspci, <a href="hard.htm">hard</a>info<br/>
+&nbsp;<a href="disk.htm">Disk</a>:<br/>
+&nbsp; gdmap<br/>
+&nbsp; <a href="back.htm">Back</a>up: p<a href="back.htm">back</a>up<br/>
+&nbsp; <a href="sync.htm">Sync</a>: mirdir, g<a href="admin.htm">admin</a>-r<a href="sync.htm">sync</a><br/>
+&nbsp; <a href="part.htm">Part</a>ition: G<a href="part.htm">Part</a>ed, f<a href="disk.htm">disk</a>, sf<a href="disk.htm">disk</a><br/>
+&nbsp;Terminal: urxvt, <a class="ext" href="http://terminator.org">terminator.org</a><br/>
+&nbsp;Proc launch: <a class="ext" href="http://drun.sf.net">drun.sf.net</a>, gexec, srun, bashrun, xrun, wbar<br/>
+&nbsp;Proc view/<a href="edit.htm">edit</a>: xosview, xload, htop, conky, hwinfo, xproc<br/>
+&nbsp;Audio: xtmix, aumix, zmixer<br/>
+&nbsp;<a href="net.htm">Net</a><a href="work.htm">work</a>: r<a href="econ.htm">econ</a>figure, <a href="net.htm">net</a>-tools, xnetload, mtr<br/>
+&nbsp; Wireless: xwconfig, wavemon, xnetstrength, wireless-tools, ndiswrapper, pwireless<br/>
+&nbsp;<a href="disk.htm">Disk</a>: lde,<br/>
+&nbsp;Power: Shutdown, Re<a href="start.htm">start</a>, xlock<br/>
+&nbsp;Upgrade: Upgrade Distro, <a href="compile.htm">Compile</a> Kernel<br/>
+&nbsp;<a href="cam.htm">Cam</a>era: gtkam, gphoto2<br/>
+&nbsp;Printer: gtklp<br/>
+&nbsp;Scanner: xsane<br/>
+gfontsel<br/>
+<br/>
+<br/>
+<a href="pdf.htm">PDF</a>: <a class="ext" href="http://Trac.Emma-Soft.com/epdfview">Trac.Emma-Soft.com/epdfview</a>, <a class="ext" href="http://PDFChain.sf.net">PDFChain.sf.net</a><br/>
+chm: chmsee<br/>
+<br/>
+Video Player: <a class="ext" href="http://Videolan.org">Videolan.org</a>, <a class="ext" href="http://SMPlayer.sf.net">SMPlayer.sf.net</a><br/>
+Re<a href="sourc.htm">sourc</a>e <a href="moni.htm">Moni</a>tor: xosview, htop<br/>
+Clock:<br/>
+<br/>
+<br/>
+Diagnostics<br/>
+&nbsp;Memory: memtest, memtester<br/>
+&nbsp;scanpci<br/>
+&nbsp;clamav<br/>
+dmidecode<br/>
+edid<br/>
+eject<br/>
+elspci<br/>
+ethtool<br/>
+<br/>
+<br/>
+pstopwatch<br/>
+<br/>
+autofs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A kernel-based auto<a href="mount.htm">mount</a>er for Linux<br/>
+axyftp-gtk&nbsp;&nbsp;&nbsp;&nbsp; A graphical ftp program with GTK interface<br/>
+cdrecord&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A command line CD/DVD writing tool<br/>
+cloop-<a href="mod.htm">mod</a>ule&nbsp;&nbsp; The compressed loop<a href="back.htm">back</a> block device kernel <br/>
+cloop-utils&nbsp;&nbsp;&nbsp;&nbsp;Tools for handling with cloop compressed vol<br/>
+<br/>
+ifupdown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High level tools to configure <a href="net.htm">net</a><a href="work.htm">work</a> interf<br/>
+mkisofs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates ISO-9660 CD-ROM <a href="file.htm">file</a>system <a href="imag.htm">imag</a>es.<br/>
+<br/>
+ppp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Point-to-Point Protocol <small>(PPP)</small> daemon.<br/>
+ppp-scripts-kn PPP connection scripts for various providers<br/>
+pppconfig&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A text <a href="menu.htm">menu</a> based utility for configuring pp<br/>
+<br/>
+rxvt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VT102 terminal <a href="emu.htm">emu</a>lator for the X Window Sys<br/>
+scite&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lightweight GTK-based Programming <a href="edit.htm">Edit</a>or<br/>
+util-linux&nbsp;&nbsp;&nbsp;&nbsp; Miscellaneous system utilities.<br/>
+wvdial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PPP dialer with <a href="buil.htm">buil</a>t-in intelligence.<br/>
+zile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a very small <a href="emacs.htm">emacs</a>-like <a href="edit.htm">edit</a>or<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<span class="h1">=Other Research</span><br/>
+distro<br/>
+<a class="ext" href="http://CDLinux.info">CDLinux.info</a><br/>
+<a class="ext" href="http://Help.UBUNTU.com/community/LiveCDCustomizationFromScratch">Help.UBUNTU.com/community/LiveCDCustomizationFromScratch</a><br/>
+<br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/gnunix">gnunix</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

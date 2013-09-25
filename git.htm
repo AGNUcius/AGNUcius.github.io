@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>git  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> version control<br/>
+<br/>
+to publish: <a href="git.htm">git</a> commit -a -m "some message"; <a href="git.htm">git</a> push<br/>
+to update: <a href="git.htm">git</a> pull<br/>
+<br/>
+<span class="h2">== Quick Reference</span><br/>
+From <a class="ext" href="http://Jonas.Nitro.dk/git/quick-reference.html">Jonas.Nitro.dk/git/quick-reference.html</a><br/>
+<span class="quot">"'<br/>
+Getting help:<br/>
+<a href="git.htm">git</a> help command &nbsp;&nbsp;&nbsp;&nbsp;or<br/>
+<a href="git.htm">git</a> command --help &nbsp;&nbsp;&nbsp;&nbsp;Show help for a command<br/>
+Repository creation:<br/>
+<a href="git.htm">git</a> init &nbsp;&nbsp;&nbsp;&nbsp;Create a repository in the <a href="curr.htm">curr</a>ent directory<br/>
+<a href="git.htm">git</a> clone url &nbsp;&nbsp;&nbsp;&nbsp;Clone a <a href="remot.htm">remot</a>e repository into a subdirectory<br/>
+<a href="file.htm">File</a> operations:<br/>
+<a href="git.htm">git</a> add path &nbsp;&nbsp;&nbsp;&nbsp;Add <a href="file.htm">file</a> or <a href="file.htm">file</a>s in directory recursively<br/>
+<a href="git.htm">git</a> rm path &nbsp;&nbsp;&nbsp;&nbsp;Remove <a href="file.htm">file</a> or directory from the <a href="work.htm">work</a>ing tree<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -f &nbsp;&nbsp;&nbsp;&nbsp;Force <a href="delet.htm">delet</a>ion of <a href="file.htm">file</a><small>(s)</small> from <a href="disk.htm">disk</a><br/>
+<a href="git.htm">git</a> mv path destination &nbsp;&nbsp;&nbsp;&nbsp;Move <a href="file.htm">file</a> or directory to new location<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -f &nbsp;&nbsp;&nbsp;&nbsp;Overwrite existing destination <a href="file.htm">file</a>s<br/>
+<a href="git.htm">git</a> checkout <small>[rev]</small> <a href="file.htm">file</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="restor.htm">Restor</a>e <a href="file.htm">file</a> from <a href="curr.htm">curr</a>ent branch or revision<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -f &nbsp;&nbsp;&nbsp;&nbsp;Overwrite uncommitted local changes<br/>
+<a href="work.htm">Work</a>ing tree:<br/>
+<a href="git.htm">git</a> <a href="stat.htm">stat</a>us &nbsp;&nbsp;&nbsp;&nbsp;Show <a href="stat.htm">stat</a>us of the <a href="work.htm">work</a>ing tree<br/>
+<a href="git.htm">git</a> <a href="diff.htm">diff</a> <small>[path]</small> &nbsp;&nbsp;&nbsp;&nbsp;Show <a href="diff.htm">diff</a> of changes in the <a href="work.htm">work</a>ing tree<br/>
+<a href="git.htm">git</a> <a href="diff.htm">diff</a> HEAD path &nbsp;&nbsp;&nbsp;&nbsp;Show <a href="diff.htm">diff</a> of stages and unstaged changes<br/>
+<a href="git.htm">git</a> add path &nbsp;&nbsp;&nbsp;&nbsp;Stage <a href="file.htm">file</a> for commit<br/>
+<a href="git.htm">git</a> reset HEAD path &nbsp;&nbsp;&nbsp;&nbsp;Unstage <a href="file.htm">file</a> for commit<br/>
+<a href="git.htm">git</a> commit &nbsp;&nbsp;&nbsp;&nbsp;Commit <a href="file.htm">file</a>s that has been staged <small>(with <a href="git.htm">git</a>-add)</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -a &nbsp;&nbsp;&nbsp;&nbsp;Automatically stage all <a href="mod.htm">mod</a>ified <a href="file.htm">file</a>s<br/>
+<a href="git.htm">git</a> reset --soft HEAD^ &nbsp;&nbsp;&nbsp;&nbsp;Undo commit &amp; keep changes in the <a href="work.htm">work</a>ing tree<br/>
+<a href="git.htm">git</a> reset --<a href="hard.htm">hard</a> HEAD^ &nbsp;&nbsp;&nbsp;&nbsp;Reset the <a href="work.htm">work</a>ing tree to the last commit<br/>
+<a href="git.htm">git</a> clean &nbsp;&nbsp;&nbsp;&nbsp;Clean un<a href="know.htm">know</a>n <a href="file.htm">file</a>s from the <a href="work.htm">work</a>ing tree<br/>
+Examining Hi<a href="stor.htm">stor</a>y:<br/>
+<a href="git.htm">git</a> log <small>[path]</small> &nbsp;&nbsp;&nbsp;&nbsp;View commit log, optionally for specific path<br/>
+<a href="git.htm">git</a> log <small>[from<small>[..to]</small>]</small> &nbsp;&nbsp;&nbsp;&nbsp;View commit log for a given revision range<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --<a href="stat.htm">stat</a> &nbsp;&nbsp;&nbsp;&nbsp;List <a href="diff.htm">diff</a><a href="stat.htm">stat</a> for each revision<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -S'pattern' &nbsp;&nbsp;&nbsp;&nbsp;Search hi<a href="stor.htm">stor</a>y for changes matching pattern<br/>
+<a href="git.htm">git</a> blame <small>[<a href="file.htm">file</a>]</small> &nbsp;&nbsp;&nbsp;&nbsp;Show <a href="file.htm">file</a> annotated with line <a href="mod.htm">mod</a>ifications<br/>
+<a href="remot.htm">Remot</a>e repositories - <a href="remot.htm">remot</a>es:<br/>
+<a href="git.htm">git</a> fetch <small>[<a href="remot.htm">remot</a>e]</small> &nbsp;&nbsp;&nbsp;&nbsp;Fetch changes from a <a href="remot.htm">remot</a>e repository<br/>
+<a href="git.htm">git</a> pull <small>[<a href="remot.htm">remot</a>e]</small> &nbsp;&nbsp;&nbsp;&nbsp;Fetch and merge changes from a <a href="remot.htm">remot</a>e repository<br/>
+<a href="git.htm">git</a> push <small>[<a href="remot.htm">remot</a>e]</small> &nbsp;&nbsp;&nbsp;&nbsp;Push changes to a <a href="remot.htm">remot</a>e repository<br/>
+<a href="git.htm">git</a> <a href="remot.htm">remot</a>e &nbsp;&nbsp;&nbsp;&nbsp;List <a href="remot.htm">remot</a>e repositories<br/>
+<a href="git.htm">git</a> <a href="remot.htm">remot</a>e add <a href="remot.htm">remot</a>e url &nbsp;&nbsp;&nbsp;&nbsp;Add <a href="remot.htm">remot</a>e to list of tracked repositories<br/>
+Branches:<br/>
+<a href="git.htm">git</a> checkout branch &nbsp;&nbsp;&nbsp;&nbsp;Switch <a href="work.htm">work</a>ing tree to branch<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -b branch &nbsp;&nbsp;&nbsp;&nbsp;Create branch before switching to it<br/>
+<a href="git.htm">git</a> branch &nbsp;&nbsp;&nbsp;&nbsp;List local branches<br/>
+<a href="git.htm">git</a> branch -f branch rev &nbsp;&nbsp;&nbsp;&nbsp;Overwrite existing branch, <a href="start.htm">start</a> from revision<br/>
+<a href="git.htm">git</a> merge branch &nbsp;&nbsp;&nbsp;&nbsp;Merge changes from branch<br/>
+Exporting and importing:<br/>
+<a href="git.htm">git</a> apply - &lt; <a href="file.htm">file</a> &nbsp;&nbsp;&nbsp;&nbsp;Apply patch from stdin<br/>
+<a href="git.htm">git</a> format-patch from<small>[..to]</small> &nbsp;&nbsp;&nbsp;&nbsp;Format a patch with log message and <a href="diff.htm">diff</a><a href="stat.htm">stat</a><br/>
+<a href="git.htm">git</a> archive rev > <a href="file.htm">file</a> &nbsp;&nbsp;&nbsp;&nbsp;Export snapshot of revision to <a href="file.htm">file</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --prefix=dir/ &nbsp;&nbsp;&nbsp;&nbsp;Nest all <a href="file.htm">file</a>s in the snapshot in directory<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --format=<small>[tar|zip]</small> &nbsp;&nbsp;&nbsp;&nbsp;Specify archive format to <a href="use.htm">use</a>: tar or zip<br/>
+Tags:<br/>
+<a href="git.htm">git</a> tag name <small>[revision]</small> &nbsp;&nbsp;&nbsp;&nbsp;Create tag for a given revision<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -s &nbsp;&nbsp;&nbsp;&nbsp;Sign tag with your private <a href="key.htm">key</a> using GPG<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -l <small>[pattern]</small> &nbsp;&nbsp;&nbsp;&nbsp;List tags, optionally matching pattern<br/>
+<a href="file.htm">File</a> <a href="stat.htm">stat</a>us flags:<br/>
+M <a href="mod.htm">mod</a>ified &nbsp;&nbsp;&nbsp;&nbsp;<a href="file.htm">File</a> has been <a href="mod.htm">mod</a>ified<br/>
+C copy-<a href="edit.htm">edit</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="file.htm">File</a> has been copied and <a href="mod.htm">mod</a>ified<br/>
+R rename-<a href="edit.htm">edit</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="file.htm">File</a> has been renamed and <a href="mod.htm">mod</a>ified<br/>
+A added &nbsp;&nbsp;&nbsp;&nbsp;<a href="file.htm">File</a> has been added<br/>
+D <a href="delet.htm">delet</a>ed &nbsp;&nbsp;&nbsp;&nbsp;<a href="file.htm">File</a> has been <a href="delet.htm">delet</a>ed<br/>
+U unmerged &nbsp;&nbsp;&nbsp;&nbsp;<a href="file.htm">File</a> has conflicts after a merge<br/>
+Last updated 02-Jun-2007 19:39:04 CEST<br/>
+'"</span><br/>
+<br/>
+<br/>
+<span class="h2">==Intro</span><br/>
+<a class="ext" href="http://Git-SCM.com">Git-SCM.com</a> <span class="quot2">>>The fast version control system</span><br/>
+<br/>
+<a class="ext" href="http://Kernel.org/pub/software/scm/git/docs">Kernel.org/pub/software/scm/git/docs</a><br/>
+<br/>
+<a class="ext" href="http://sunoano.name/ws/public_xhtml/scm.html">sunoano.name/ws/public_xhtml/scm.html</a><br/>
+<br/>
+<a class="ext" href="http://www-cs-students.stanford.edu/~blynn/gitmagic">www-cs-students.stanford.edu/~blynn/gitmagic</a> <span class="quot2">>><a href="git.htm">Git</a> is a version control Swiss army knife. A reliable versatile multipurpose revision control tool whose extraordinary flexibility <a href="mak.htm">mak</a>es it tricky to learn, let alone master.</span><br/>
+<br/>
+<a class="ext" href="http://Eagain.net/articles/git-for-computer-scientists">Eagain.net/articles/git-for-computer-scientists</a> <span class="quot2">>>Quick introduction to <a href="git.htm">git</a> internals for people who are not scared by words like Directed Acyclic Graph.</span><br/>
+<br/>
+<a class="ext" href="http://WikiBooks.org/wiki/Source_Control_Management_With_Git">WikiBooks.org/wiki/Source_Control_Management_With_Git</a><br/>
+<br/>
+<a class="ext" href="http://WhyGitIsBetterThanX.com">WhyGitIsBetterThanX.com</a> <span class="quot2">>>This site is here because I seem to be spending a lot of time lately defending <a href="git.htm">Git</a>sters against charges of fanboyism, bandwagonism and koolaid-thirst. So, here is why people are switching to <a href="git.htm">Git</a> from X, and why you should too.</span><br/>
+<br/>
+<span class="h2">==Tools</span><br/>
+<a class="ext" href="http://MSYSGit.GoogleCode.com">MSYSGit.GoogleCode.com</a> <span class="quot2">>>Hi<a href="stor.htm">stor</a>ically, <a href="git.htm">Git</a> on Windows was only officially supported using <a href="cygwin.htm">Cygwin</a>. To help <a href="mak.htm">mak</a>e a native Windows version, this project was <a href="start.htm">start</a>ed, based on the fork.</span><br/>
+<br/>
+<a class="ext" href="http://TortoiseGit.GoogleCode.com">TortoiseGit.GoogleCode.com</a> <span class="quot2">>>It is porting TortoiseSVN to TortoiseGit The latest release 0.9.1.0 This release can complete regular task, such commit, show log, <a href="diff.htm">diff</a> two version, create branch and tag, Create patch and so on.</span><br/>
+<br/>
+<br/>
+<span class="h2">==Hosting</span><br/>
+<a class="ext" href="http://repo.or.cz">repo.or.cz</a><br/>
+<a class="ext" href="http://Gitorious.org">Gitorious.org</a><br/>
+<a class="ext" href="http://GitHub.com">GitHub.com</a><br/>
+<br/>
+<br/>
+<span class="h2">==Init <a href="mac.htm">Mac</a>hine</span><br/>
+<a href="git.htm">git</a> config --global <a class="ext" href="http://user.name">user.name</a> "Your Name"<br/>
+<a href="git.htm">git</a> config --global <a href="user.htm">user</a>.e<a href="mail.htm">mail</a> your@<a class="ext" href="http://email.com">email.com</a><br/>
+<br/>
+<a href="ssh.htm">ssh</a>-<a href="key.htm">key</a>gen -t rsa -C "your@<a class="ext" href="http://email.com"">email.com"</a><br/>
+copy ~/.<a href="ssh.htm">ssh</a>/id_rsa.pub to the <a href="git.htm">git</a> host <small>(such as <a href="git.htm">git</a>hub)</small><br/>
+<br/>
+<span class="h4">====Init project</span><br/>
+cd $<small>(PROJECT)</small><br/>
+<a href="git.htm">git</a> init<br/>
+<a href="git.htm">git</a> add README.txt<br/>
+<a href="git.htm">git</a> commit -a -m 'init'<br/>
+<a href="git.htm">git</a> <a href="remot.htm">remot</a>e add origin <a href="git.htm">git</a>@<a class="ext" href="http://github.com">github.com</a>:$<small>(<a href="user.htm">USER</a>)</small>/$<small>(PROJECT)</small>.<a href="git.htm">git</a><br/>
+<a href="git.htm">git</a> push -u origin master<br/>
+<br/>
+<br/>
+<br/>
+<span class="h4">====Clone project with write access</span><br/>
+<a href="git.htm">git</a> clone <a href="git.htm">git</a>@<a class="ext" href="http://github.com">github.com</a>:<a href="agnu.htm">AGNU</a>cius/<a href="gnunix.htm">GNUnix</a>.<a href="git.htm">git</a><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/git">git</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

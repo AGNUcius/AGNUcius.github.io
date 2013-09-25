@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>mount  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> burn, CD, <a href="disk.htm">disk</a>, driver, <a href="file.htm">file</a>, fstab, ISO, link, ntfs, sb<a href="mount.htm">mount</a>, <a href="usb.htm">USB</a><br/>
+<br/>
+<a class="ext" href="http://WinFlux.GoogleCode.com">WinFlux.GoogleCode.com</a> <span class="quot2">>>WinFlux: <a href="file.htm">File</a>systems in Windows <a href="user.htm">User</a><a href="spac.htm">spac</a>e!</span><br/>
+<br/>
+<a class="ext" href="http://Glandium.org/projects/vmfs-tools">Glandium.org/projects/vmfs-tools</a> <span class="quot2">>>Originally loosely based on the vmfs code from fluidOps, this set of tools has since evolved to handle more features from VMFS, such as extents, and allows to access VMFS through the standard Linux VFS with the help of the FUSE frame<a href="work.htm">work</a>.</span><br/>
+<br/>
+<a class="ext" href="http://Ltr-Data.se/opencode.html">Ltr-Data.se/opencode.html</a> Im<a href="disk.htm">Disk</a> is a <a href="virt.htm">virt</a>ual <a href="disk.htm">disk</a> driver for Windows NT/2000/XP/2003/Vista/2008. It can <a href="use.htm">use</a> one or more <a href="disk.htm">disk</a> <a href="imag.htm">imag</a>e <a href="file.htm">file</a>s to create <a href="virt.htm">virt</a>ual <a href="hard.htm">hard</a> <a href="disk.htm">disk</a>, floppy or CD/DVD drives .The <a href="install.htm">install</a> <a href="pack.htm">pack</a>age <a href="install.htm">install</a>s a console-<a href="mod.htm">mod</a>e control program called im<a href="disk.htm">disk</a>.exe and a Control Panel applet. After <a href="install.htm">install</a> is finished, type im<a href="disk.htm">disk</a> without parameters for syntax help or double click the Im<a href="disk.htm">Disk</a> icon in the Control Panel. It also adds a <a href="menu.htm">menu</a> item in Windows Explorer so that you can right-click on a <a href="file.htm">file</a> to <a href="mount.htm">mount</a> it as a <a href="virt.htm">virt</a>ual <a href="disk.htm">disk</a> drive. <a href="user.htm">User</a>s of mdconfig in <a href="free.htm">Free</a>BSD will probably be familiar with the command line syntax of im<a href="disk.htm">disk</a>.exe. The driver, service and control program can be un<a href="install.htm">install</a>ed using the Add/Remove programs applet in the Control Panel. No re<a href="boot.htm">boot</a> is required for <a href="install.htm">install</a>ing or un<a href="install.htm">install</a>ing.<br/>
+<br/>
+<a class="ext" href="http://ChitChat.at.InfoSeek.co.jp/vmware/vdk.html">ChitChat.at.InfoSeek.co.jp/vmware/vdk.html</a> <span class="quot2">>>With VDK you can <a href="mount.htm">mount</a> a VMware <a href="virt.htm">virt</a>ual <a href="disk.htm">disk</a> to your Windows hosts and <a href="use.htm">use</a> them as another <a href="disk.htm">disk</a> drive attached to your system.</span><br/>
+<br/>
+<span class="h2">==<a href="mount.htm">Mount</a> Windows Share <small>(SMB/CIFS)</small></span><br/>
+<span class="shell">$ sudo mkdir /mnt/WindowsMachineOrIP/Sh<a href="arena.htm">areNa</a>me</span><br/>
+<span class="shell">$ sudo <a href="mount.htm">mount</a> -t cifs //WindowsMachineOrIP/Sh<a href="arena.htm">areNa</a>me /mnt/WindowsMachineOrIP/Sh<a href="arena.htm">areNa</a>me -o domain=YourDomain,<a href="user.htm">user</a>=Your<a href="user.htm">User</a>Name,<a href="pass.htm">pass</a>=Your<a href="pass.htm">Pass</a>Word</span><br/>
+<br/>
+<a href="use.htm">Use</a> the <a href="back.htm">back</a>slash '\' to escape any of: <small>(, )</small>, &amp;, *, \<br/>
+<br/>
+<br/>
+<span class="shell">$ <a href="mount.htm">mount</a> -t cifs //WindowsMachineOrIP/Sh<a href="arena.htm">areNa</a>me /mnt/WindowsMachineOrIP/Sh<a href="arena.htm">areNa</a>me -o credentials=~/WindowsCredentials<a href="file.htm">File</a>.txt</span><br/>
+<br/>
+__<a href="file.htm">file</a>: ~/WindowsCredentials<a href="file.htm">File</a>.txt<br/>
+domain=SomeDomain<br/>
+<a href="user.htm">user</a>=Your<a href="user.htm">User</a>Name<br/>
+<a href="pass.htm">pass</a>=Your<a href="pass.htm">Pass</a>Word<br/>
+__<br/>
+<br/>
+<br/>
+<span class="h2">==ISO</span><br/>
+<a class="ext" href="http://WinCDemu.sf.net">WinCDemu.sf.net</a> <span class="quot2">>>WinCDEmu is an open-<a href="sourc.htm">sourc</a>e software that allows <a href="mount.htm">mount</a>ing CD/DVD <a href="imag.htm">imag</a>es by clicking at the <a href="imag.htm">imag</a>e <a href="file.htm">file</a>s in Windows Explorer. It supports both Windows XP and Vista, is open-<a href="sourc.htm">sourc</a>e and completely <a href="free.htm">free</a>ware.&nbsp;&nbsp;Version 2.0 supports ISO, CUE, BIN/RAW/IMG <a href="file.htm">file</a> formats as well as SMB <a href="net.htm">net</a><a href="work.htm">work</a> shares and includes a <a href="work.htm">work</a>around for Windows cache bug.</span><br/>
+<br/>
+<span class="shell">$ sudo mkdir /mnt/somedir</span><br/>
+<span class="shell">$ sudo <a href="mount.htm">mount</a> -o loop Some_<a href="imag.htm">Imag</a>e.iso /mnt/somedir # may require&nbsp;&nbsp;-t iso9660&nbsp;&nbsp;option</span><br/>
+<br/>
+<a class="ext" href="http://VaporCD.sf.net">VaporCD.sf.net</a> <span class="quot2">>>VaporCD can create a copy of a CD on your <a href="hard.htm">hard</a> <a href="disk.htm">disk</a> and <a href="mount.htm">mount</a> it as if it were the <a href="real.htm">real</a> CD. VaporCD <a href="work.htm">work</a>s with Windows NT 4.0 or Windows 2000. This is very handy when you have extra <a href="hard.htm">hard</a> drive <a href="spac.htm">spac</a>e and get tired of changing out CD's. Also, yet another benefit VaporCD is faster than a normal CD-ROM.</span><br/>
+<br/>
+<br/>
+<span class="h2">==NTFS</span><br/>
+<span class="shell">$ ntfs-3g /dev/sda1 /mnt/windows -o force</span><br/>
+<br/>
+<span class="shell">$ fsutil.exe #<a class="ext" href="http://Technet.Microsoft.com/en-us/library/cc753059.aspx">Technet.Microsoft.com/en-us/library/cc753059.aspx</a>, <a class="ext" href="http://SS64.com/nt/fsutil.html">SS64.com/nt/fsutil.html</a>, <a class="ext" href="http://CommandWindows.com/fsutil.htm">CommandWindows.com/fsutil.htm</a></span><br/>
+<br/>
+<a class="ext" href="http://Support.Microsoft.com/kb/205524">Support.Microsoft.com/kb/205524</a> <span class="quot2">>>How to create and manipulate NTFS junction points</span><br/>
+<span class="shell">$ <a href="mount.htm">Mount</a>Vol.exe #Creates, <a href="delet.htm">delet</a>es, or lists a volume <a href="mount.htm">mount</a> point.</span><br/>
+<span class="shell">$ linkd.exe #from the Microsoft Windows 2000 Re<a href="sourc.htm">sourc</a>e Kit</span><br/>
+<span class="shell">$ DelRP.exe #from the Microsoft Windows 2000 Re<a href="sourc.htm">sourc</a>e Kit</span><br/>
+<br/>
+<br/>
+<span class="h4">====.vmdk</span><br/>
+<a class="ext" href="http://ChitChat.at.infoseek.co.jp/vmware/vdk.html">ChitChat.at.infoseek.co.jp/vmware/vdk.html</a> <span class="quot2">>>With VDK you can <a href="mount.htm">mount</a> a VMware <a href="virt.htm">virt</a>ual <a href="disk.htm">disk</a> to your Windows hosts and <a href="use.htm">use</a> them as another <a href="disk.htm">disk</a> drive attached to your system.</span><br/>
+<br/>
+<br/>
+<span class="h4">====.spf</span><br/>
+<span class="shell">$ sb<a href="mount.htm">mount</a></span><br/>
+<br/>
+<span class="h4">====.vhd</span><br/>
+<span class="shell">$ <a href="imag.htm">imag</a>ex.exe #<a href="mount.htm">mount</a> .wim <a href="file.htm">file</a>s</span><br/>
+<span class="shell">$ VHD<a href="mount.htm">Mount</a>.exe</span><br/>
+<br/>
+<br/>
+<span class="h4">====Unix NFS drive:</span><br/>
+<span class="shell">$ export #do this on the 'server'</span><br/>
+<br/>
+<span class="shell">$ mkdir /mnt/192.168.1.101 #do this on the 'client'</span><br/>
+<span class="shell">$ <a href="mount.htm">mount</a> 192.168.1.101:/ /mnt/192.168.1.101 #do this on the 'client'</span><br/>
+<br/>
+<span class="shell">$ sudo f<a href="disk.htm">disk</a> -l</span><br/>
+<br/>
+<br/>
+<span class="h2">==EXT</span><br/>
+<a class="ext" href="http://Ext2Fsd.sf.net">Ext2Fsd.sf.net</a> <span class="quot2">>>Ext2Fsd is an open <a href="sourc.htm">sourc</a>e linux ext2/ext3 <a href="file.htm">file</a> system driver for Windows systems <small>(NT/2K/XP/VISTA, X86/AMD64)</small>.</span><br/>
+<br/>
+<a class="ext" href="http://FS-Driver.org">FS-Driver.org</a> <small>[<small>[!NON-<a href="free.htm">FREE</a>!&nbsp;&nbsp;<a href="sourc.htm">Sourc</a>e is locked closed.&nbsp;&nbsp;Do not <a href="use.htm">use</a>.&nbsp;&nbsp;For hi<a href="stor.htm">stor</a>ical reference only.]</small>]</small> <span class="quot2">>>It provides Windows NT4.0/2000/XP/2003/Vista/2008 with full access to Linux Ext2 volumes <small>(read access and write access)</small>. This may be <a href="use.htm">use</a>ful if you have <a href="install.htm">install</a>ed both Windows and Linux as a dual <a href="boot.htm">boot</a> environment on your <a href="compu.htm">compu</a>ter.</span><br/>
+<br/>
+<span class="h2">==Reiser</span><br/>
+<a class="ext" href="http://RFSD.sf.net">RFSD.sf.net</a> <span class="quot2">>>ReiserDriver is an <a href="install.htm">Install</a>able <a href="file.htm">File</a> System Driver <small>(IFSD)</small>, <a href="use.htm">use</a>d to easily <small>(and natively!)</small> read ReiserFS <a href="disk.htm">disk</a> <a href="part.htm">part</a>itions under Microsoft Windows <small>(2K/XP)</small> by allowing ReiserFS <a href="part.htm">part</a>itions to appear as additional <a href="disk.htm">disk</a>s to the Windows <a href="operating system.htm">operating system</a>.</span><br/>
+<br/>
+<br/>
+<span class="h2">==<a href="virtualbox.htm">VirtualBox</a></span><br/>
+In the VBox <a href="gui.htm">GUI</a> Choose "Devices|Shared Folders..." and add a "<a href="mac.htm">Mac</a>hine Folder".&nbsp;&nbsp;Share the c$ drive and name that share 'c'.<br/>
+<br/>
+Create a directory in <a href="gnunix.htm">GNUnix</a> that will represent the Shared Folder.<br/>
+<span class="shell">$ sudo mkdir /mnt/c</span><br/>
+<br/>
+<a href="mount.htm">Mount</a> the Shared Folder 'c' to <a href="mount.htm">mount</a>point /mnt/c as type "vboxsf"<br/>
+<span class="shell">$ sudo <a href="mount.htm">mount</a> -t vboxsf c /mnt/c</span><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/mount">mount</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

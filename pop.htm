@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>pop  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> <a href="imap.htm">IMAP</a>, <a href="mail.htm">mail</a>, <a href="smtp.htm">SMTP</a><br/>
+<br/>
+<a class="ext" href="http://POP4.org">POP4.org</a> <span class="quot2">>><a href="pop.htm">POP</a> 4 is a specification for a few extensions to the <a href="pop.htm">POP</a> 3 internet e<a href="mail.htm">mail</a> protocol that gives much greater flexibility to e<a href="mail.htm">mail</a> client programs without adding a heavy burden to the <a href="pop.htm">POP</a> server. </span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://FreeSoft.org/CIE/RFC/1725/8.htm">FreeSoft.org/CIE/RFC/1725/8.htm</a><br/>
+<span class="quot">"'Minimal <a href="pop.htm">POP</a>3 Commands:<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="user.htm">USER</a> name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valid in the AUTHORIZATION <a href="stat.htm">stat</a>e<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="pass.htm">PASS</a> string<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QUIT<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="stat.htm">STAT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid in the TRANSACTION <a href="stat.htm">stat</a>e<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIST <small>[msg]</small><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RETR msg<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DELE msg<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOOP<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSET<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QUIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid in the UPDATE <a href="stat.htm">stat</a>e<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;Optional <a href="pop.htm">POP</a>3 Commands:<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; APOP name digest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid in the AUTHORIZATION <a href="stat.htm">stat</a>e<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOP msg n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valid in the TRANSACTION <a href="stat.htm">stat</a>e<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UIDL <small>[msg]</small><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;<a href="pop.htm">POP</a>3 Replies:<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +OK<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -ERR<br/>
+<br/>
+<a href="note.htm">Note</a> that with the exception of the <a href="stat.htm">STAT</a>, LIST, and UIDL commands, the reply given by the <a href="pop.htm">POP</a>3 server to any command is significant only to "+OK" and "-ERR". Any text oc<a href="curr.htm">curr</a>ing after this reply may be ignored by the client.'"</span><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<a class="ext" href="http://FreeSoft.org/CIE/RFC/1725/9.htm">FreeSoft.org/CIE/RFC/1725/9.htm</a><br/>
+<span class="quot">"'<br/>
+9. Example <a href="pop.htm">POP</a>3 Session<br/>
+&nbsp;&lt;open connection><br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK <a href="pop.htm">POP</a>3 server ready &lt;1896.697170952@<a class="ext" href="http://dbc.mtview.ca.us">dbc.mtview.ca.us</a>><br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;APOP mrose c4c9334bac560ecc979e58001b3e22fb<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK mrose's <a href="mail.htm">mail</a>drop has 2 messages <small>(320 octets)</small><br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;<a href="stat.htm">STAT</a><br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK 2 320<br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;LIST<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK 2 messages <small>(320 octets)</small><br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;1 120<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;2 200<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;.<br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;RETR 1<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK 120 octets<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;&lt;the <a href="pop.htm">POP</a>3 server sends message 1><br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;.<br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;DELE 1<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK message 1 <a href="delet.htm">delet</a>ed<br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;RETR 2<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK 200 octets<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;&lt;the <a href="pop.htm">POP</a>3 server sends message 2><br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;.<br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;DELE 2<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK message 2 <a href="delet.htm">delet</a>ed<br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&nbsp;&nbsp;QUIT<br/>
+&nbsp;&nbsp;&nbsp;S:&nbsp;&nbsp;&nbsp;&nbsp;+OK dewey <a href="pop.htm">POP</a>3 server signing off <small>(<a href="mail.htm">mail</a>drop empty)</small><br/>
+&nbsp;&nbsp;&nbsp;C:&nbsp;&nbsp;&lt;close connection><br/>
+'"</span><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/pop">pop</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

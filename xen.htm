@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>xen  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> vhd, <a href="virt.htm">virt</a><br/>
+<br/>
+<span class="h2">==<a href="xen.htm">XEN</a> and Citrix <a href="xen.htm">Xen</a>Server</span><br/>
+Support <a href="imag.htm">imag</a>e <a href="file.htm">file</a> conversion to <a href="xen.htm">Xen</a> format <small>(.xva)</small><br/>
+<br/>
+VMware Converter<br/>
+<a href="xen.htm">Xen</a>Convert <a class="ext" href="http://forums.citrix.com/forum.jspa?forumID=876">forums.citrix.com/forum.jspa?forumID=876</a><br/>
+Project Kensho <a class="ext" href="http://community.citrix.com/display/xs/Kensho">community.citrix.com/display/xs/Kensho</a><br/>
+OVF <a class="ext" href="http://support.citrix.com/article/CTX121652">support.citrix.com/article/CTX121652</a> <span class="quot2">>>OVF is the natural successor to XVA</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://www.jolokianetworks.com/70Knowledge/Virtualization/Converting_from_Citrix_XenServer_to_Xen_open_source/Xenmigrate.py">www.jolokianetworks.com/70Knowledge/Virtualization/Converting_from_Citrix_XenServer_to_Xen_open_source/Xenmigrate.py</a><br/>
+<br/>
+<a class="ext" href="http://www.jolokianetworks.com/70Knowledge/Virtualization/Converting_from_Citrix_XenServer_to_Xen_open_source/Citrix_.XVA_%28Xen_Virtual_Appliance%29_Format">www.jolokianetworks.com/70Knowledge/Virtualization/Converting_from_Citrix_XenServer_to_Xen_open_source/Citrix_.XVA_%28Xen_Virtual_Appliance%29_Format</a><br/>
+<span class="quot">"'<br/>
+In Citrix 4.1 the .xva <a href="file.htm">file</a> is pretty simple, yet stupid.&nbsp;&nbsp;It is a tar <a href="file.htm">file</a>, with screwed up dates, your old friend ova.xml and then a directories <a href="start.htm">start</a>ing with Ref that are full of <a href="part.htm">part</a>s of your logical volumes that <a href="mak.htm">mak</a>e up the drives of your <a href="virt.htm">virt</a>ual.&nbsp;&nbsp;The ova.xml <a href="file.htm">file</a> has relevent metadata in it, but some moron laid out the xml in a format fit only for an incessently looping xml reading script -- you can read it, but you'll want to smack someone after you do.<br/>
+<br/>
+In 4.1 the <a href="file.htm">file</a>s are numbered <a href="start.htm">start</a>ing at 00000000 going up in blocks of 1MB.&nbsp;&nbsp;When there is blank <a href="spac.htm">spac</a>e on the drive, the <a href="file.htm">file</a>s are skipped.&nbsp;&nbsp;Pretty damned spiffy way of saving <a href="spac.htm">spac</a>e compared to something like, I donno, compression?&nbsp;&nbsp;Anyway, you can paste those <a href="file.htm">file</a>s <a href="back.htm">back</a> together assuming you put the blank <a href="spac.htm">spac</a>e <a href="back.htm">back</a> in and then <a href="use.htm">use</a> the <a href="file.htm">file</a> as a raw.&nbsp;&nbsp;The <a href="xen.htm">xen</a>migrate.py program will do this for you:<br/>
+<br/>
+python <a href="xen.htm">xen</a>migrate --convert=my<a href="file.htm">file</a>s/ref\: my<a href="file.htm">file</a>s/output.raw<br/>
+<br/>
+That's it, it'll take some time, but you'll end up with a usable raw <a href="file.htm">file</a>.<br/>
+<br/>
+I thought 5.0 would introduce compressed <a href="file.htm">file</a>s and segements up to 1GB.&nbsp;&nbsp;It doesn't appear that any of that made it into 5.0 -- its <a href="file.htm">file</a>s are the same as 4.0.<br/>
+<br/>
+I'd love it if someone would chime in here and tell me why someone would <a href="mak.htm">mak</a>e a stupid <a href="file.htm">file</a> format like this.&nbsp;&nbsp;What would be wrong with just tarring the up raw <a href="file.htm">file</a>?&nbsp;&nbsp;Why break it into small bits if you are going to <a href="pack.htm">pack</a> it into one <a href="file.htm">file</a> anyway?&nbsp;&nbsp;Why not compress it?&nbsp;&nbsp;Why is his head so big?&nbsp;&nbsp;Why?<br/>
+'"</span><br/>
+<br/>
+<a class="ext" href="http://Forums.Citrix.com/thread.jspa?threadID=248957&tstart=0">Forums.Citrix.com/thread.jspa?threadID=248957&tstart=0</a> <span class="quot2">>><a href="xen.htm">Xen</a>Convert can consume a VMware created OVF, however, VMware can <small>(<a href="curr.htm">curr</a>ently)</small> only consume their <a href="own.htm">own</a> OVF.</span><br/>
+<br/>
+<br/>
+<br/>
+<a class="ext" href="http://Mediakey.dk/~cc/howto-install-windows-xp-vista-on-xen">Mediakey.dk/~cc/howto-install-windows-xp-vista-on-xen</a><br/>
+<br/>
+<a class="ext" href="http://Developer.Novell.com/wiki/index.php/Xenfire">Developer.Novell.com/wiki/index.php/Xenfire</a> <span class="quot2">>><a href="xen.htm">Xen</a>fire is a soft appliance that can be <a href="use.htm">use</a>d to auto-<a href="install.htm">install</a> multiple <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hines on a single physical server using the <a href="xen.htm">Xen</a> <a href="virt.htm">virt</a>ualization technology. It can be <a href="use.htm">use</a>ful for small and medium enterprises to consolidate their intranet servers and gateway server into one single physical server, while still preserving the <a href="admin.htm">admin</a>istrative and security advantages of running two separate systems.</span><br/>
+<br/>
+<a class="ext" href="http://DSG.CS.UBC.ca/secondsite">DSG.CS.UBC.ca/secondsite</a> <span class="quot2">>> S<a href="econ.htm">econ</a>dSite is a project to provide high availability services via the <a href="xen.htm">Xen</a> <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hine <a href="moni.htm">moni</a>tor. Its mechanisms include: * frequent <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hine <a href="checkpoint.htm">checkpoint</a>s <small>(using iterative copy to minimize downtime)</small> * group-wide <a href="checkpoint.htm">checkpoint</a> consistency via <a href="net.htm">net</a><a href="work.htm">work</a> interposition * low-overhead persistent <a href="stor.htm">stor</a>age <a href="checkpoint.htm">checkpoint</a>ing using the Parallax block device</span><br/>
+<br/>
+<a class="ext" href="http://xen-tools.org">xen-tools.org</a> <span class="quot2">>><a href="xen.htm">xen</a>-tools is a collection of software which allow you to create new guest domains.</span><br/>
+<br/>
+<a class="ext" href="http://Community.Citrix.com/display/xs/Kensho">Community.Citrix.com/display/xs/Kensho</a> <span class="quot2">>>Citrix Project Kensho provides <a href="admin.htm">admin</a>istrators with highly usable tools that facilitate the export and import of <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hines and <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hine based <a href="work.htm">work</a>loads <small>(<a href="virt.htm">virt</a>ual appliances)</small> using the Open <a href="virt.htm">Virt</a>ual <a href="mac.htm">Mac</a>hine Format <small>(OVF)</small> and Common Information <a href="mod.htm">Mod</a>el <small>(CIM)</small> industry standards developed by the Distributed Management Task Force <small>(DMTF)</small>.&nbsp;&nbsp;&nbsp;&nbsp;The Project Kensho OVF Tool utilizes the OVF standard for the export and import of <a href="virt.htm">virt</a>ual appliances. The Open <a href="virt.htm">Virt</a>ual <a href="mac.htm">Mac</a>hine Format is an XML document that describes the metadata of <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hine<small>(s)</small> that are stand alone or <a href="part.htm">part</a> of a <a href="virt.htm">virt</a>ual appliance along with pointers to the location of the <a href="virt.htm">virt</a>ual <a href="disk.htm">disk</a>s.&nbsp;&nbsp;&nbsp;&nbsp;Citrix Project Kensho also provides a CIM interface to the <a href="xen.htm">Xen</a>Server™ API. As well as introducing a WSMAN interface to <a href="xen.htm">Xen</a>Server™. The <a href="xen.htm">Xen</a>-CIM component is required by the Project Kensho OVF Tool and <a href="install.htm">install</a>s directly on the <a href="xen.htm">Xen</a>Server™.</span><br/>
+<br/>
+<a class="ext" href="http://Community.Citrix.com/blogs/citrite/simoncr/2009/04/16/XenConvert+v2+Tech+Preview+-+OVF+and+VMDK+Support+for+XenServer">Community.Citrix.com/blogs/citrite/simoncr/2009/04/16/XenConvert+v2+Tech+Preview+-+OVF+and+VMDK+Support+for+XenServer</a> <span class="quot2">>><a href="xen.htm">Xen</a>Convert 2.0 supports direct import of VMware VMDK <a href="virt.htm">virt</a>ual <a href="hard.htm">hard</a> <a href="disk.htm">disk</a>s into <a href="xen.htm">Xen</a>Server, including all v2v operations.&nbsp;&nbsp;It has also <a href="produc.htm">produc</a>tized the Citrix Project Kensho implementation of the DMTF portable application <a href="pack.htm">pack</a>aging format, OVF <small>(Open <a href="virt.htm">Virt</a>ual <a href="mac.htm">mac</a>hine Format)</small>, which Citrix has helped to develop and standardize.&nbsp;&nbsp;OVF <a href="virt.htm">virt</a>ual appliance <a href="pack.htm">pack</a>ages will now directly import in to <a href="xen.htm">Xen</a>Server to instantiate a complex <a href="virt.htm">virt</a>ualized application stack, together with all of its relevant infrastructure re<a href="sourc.htm">sourc</a>e requirements.&nbsp;&nbsp;&nbsp;&nbsp;<a href="xen.htm">Xen</a>Convert's v2v capabilities mean that even VMware dependent OVFs will be able to be imported into <a href="xen.htm">Xen</a>Server, which in turn means zero switching <a href="cost.htm">cost</a> to <a href="xen.htm">Xen</a>Server.&nbsp;&nbsp; Since <a href="xen.htm">Xen</a>Server itself is also <a href="free.htm">free</a>, my guess is <a href="xen.htm">Xen</a>Convert 2.0 puts you well into the black on your next <a href="virt.htm">virt</a>ualization project.&nbsp;&nbsp;Finally, any <a href="vm.htm">VM</a> you import into VHD <a href="file.htm">file</a>s for <a href="use.htm">use</a> by <a href="xen.htm">Xen</a>Server can also be <a href="use.htm">use</a>d in our provisioning services engine <small>(the <a href="art.htm">art</a>ist formerly <a href="know.htm">know</a>n as Citrix Provisioning Server for Data Centers)</small> to allow you to dynamically stream a <a href="vm.htm">VM</a> onto any hypervisor and even bare metal!</p>
+<p class='footer'>
+ Page generated from <a href=".text/xen">xen</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

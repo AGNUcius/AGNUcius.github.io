@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>boot  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> begin, init, lilo, MBR, <a href="part.htm">part</a>ition, WinPE, PXE, root, <a href="start.htm">start</a>, strap, <a href="usb.htm">USB</a><br/>
+<br/>
+<a class="ext" href="http://Barebox.org">Barebox.org</a> <span class="quot2">>>Barebox <small>(formerly <a href="know.htm">know</a>n as u-<a href="boot.htm">boot</a>-v2)</small> is a <a href="boot.htm">boot</a>loader that inherits the best of U-<a href="boot.htm">Boot</a> and the Linux kernel: The size and look-and-feel of u-<a href="boot.htm">boot</a>, with driver <a href="mod.htm">mod</a>el and lots of design concepts from the kernel.</span><br/>
+<br/>
+<span class="h2">==PXE</span><br/>
+<a class="ext" href="http://LiNBo.sf.net">LiNBo.sf.net</a> <span class="quot2">>>Linux-based <a href="net.htm">Net</a><a href="work.htm">work</a> <a href="boot.htm">Boot</a>manager A graphical <a href="boot.htm">boot</a>manager providing OS deployment and repair for Linux, Windows, possibly other <a href="operating system.htm">operating system</a>s, via PXE and local cache.</span><br/>
+<br/>
+<a class="ext" href="http://netboot.me">netboot.me</a> <span class="quot2">>><a class="ext" href="http://netboot.me">netboot.me</a> is a service that allows you to <a href="boot.htm">boot</a> nearly any <a href="operating system.htm">operating system</a> or utility on any <a href="compu.htm">compu</a>ter with a wired internet connection - without having to <a href="know.htm">know</a> ahead of time what you'll want to <a href="boot.htm">boot</a>.&nbsp;&nbsp;Once you can <a class="ext" href="http://netboot.me">netboot.me</a>, you never need to update your <a href="boot.htm">boot</a> <a href="disk.htm">disk</a> again!&nbsp;&nbsp;<a class="ext" href="http://netboot.me">netboot.me</a> <a href="work.htm">work</a>s through the magic of <a href="net.htm">net</a><a href="boot.htm">boot</a>ing.&nbsp;&nbsp;There are a number of ways to <a href="boot.htm">boot</a> a <a href="compu.htm">compu</a>ter with <a class="ext" href="http://netboot.me.">netboot.me.</a>&nbsp;&nbsp;The simplest is to download a <a href="boot.htm">boot</a>able <a href="imag.htm">imag</a>e and burn it to a CD, <a href="usb.htm">USB</a> memory stick, or floppy <a href="disk.htm">disk</a>. <a href="boot.htm">Boot</a> off it on any <a href="net.htm">net</a><a href="work.htm">work</a>ed <a href="compu.htm">compu</a>ter, and it will automatically fetch the latest <a href="boot.htm">boot</a> options from <a class="ext" href="http://netboot.me">netboot.me</a> and let you choose from dozens of <a href="install.htm">install</a>ation, <a href="recover.htm">recover</a>y, testing, portable desktop and other tools.&nbsp;&nbsp;You can also <a href="start.htm">start</a> <a class="ext" href="http://netboot.me">netboot.me</a> from any <a href="compu.htm">compu</a>ter running gPXE, or from any <a href="net.htm">net</a><a href="boot.htm">boot</a>able <a href="compu.htm">compu</a>ter with some simple tweaks to your DHCP server.</span><br/>
+<br/>
+<a class="ext" href="http://Boot.Kernel.org">Boot.Kernel.org</a> <small>[<small>(BKO)</small> : <a href="boot.htm">Boot</a>ing your <a href="mac.htm">mac</a>hine over <a href="http.htm">HTTP</a> ]</small> <span class="quot2">>>Our <a href="obj.htm">obj</a>ective is to let <a href="user.htm">user</a>s <a href="boot.htm">boot</a> their <a href="mac.htm">mac</a>hines with bare minimal requirements on their side, and we will handle most of the problem that you may face in <a href="boot.htm">boot</a>ing. All that <a href="user.htm">user</a> needs is Internet connectivity and a small program <small>(gpxe)</small> to <a href="boot.htm">boot</a> the <a href="mac.htm">mac</a>hine. This gpxe program provides <a href="net.htm">net</a><a href="work.htm">work</a> <a href="boot.htm">boot</a>ing facility. You can download these program from our site <small>(available at Downloads <a href="sect.htm">sect</a>ion)</small>. Also, you can find a list of distributions and tools that can be <a href="boot.htm">boot</a>ed with BKO here. Your small 56KB gpxe program can <a href="boot.htm">boot</a> any of these options!</span><br/>
+<br/>
+<br/>
+<span class="h2">==Managers</span><br/>
+<a class="ext" href="http://burg.GoogleCode.com">burg.GoogleCode.com</a> and <a class="ext" href="http://LaunchPad.net/burg">LaunchPad.net/burg</a> <span class="quot2">>>burg is a brand-new <a href="boot.htm">boot</a> loader based on GRUB. It <a href="use.htm">use</a>s a new <a href="obj.htm">obj</a>ect format which allows it to be <a href="buil.htm">buil</a>t in a wider range of OS, including Linux/Windows/<a href="osx.htm">OSX</a>/<a href="free.htm">Free</a>BSD, etc. It also has a highly configurable <a href="menu.htm">menu</a> system which <a href="work.htm">work</a>s in both text and graphic <a href="mod.htm">mod</a>e. Additional features like stream support and multiple input/output device are also planned.</span><br/>
+<br/>
+<a class="ext" href="http://SolemnWarning.net/kexec-loader">SolemnWarning.net/kexec-loader</a> <span class="quot2">>>kexec-loader is a Linux based <a href="boot.htm">boot</a>loader that <a href="use.htm">use</a>s kexec to <a href="start.htm">start</a> the kernel of your choice. It fits on a 1.44MB floppy, supports most block devices supported by Linux and is easy to <a href="use.htm">use</a>. kexec-loader supports reading GRUB configuration <a href="file.htm">file</a>s, this allows kexec-loader to be <a href="use.htm">use</a>d as a drop-in replacement for GRUB by merely setting the GRUB <a href="install.htm">install</a>ation path.</span><br/>
+<br/>
+<a class="ext" href="http://ZorOS.sf.net">ZorOS.sf.net</a> <span class="quot2">>>ZorOS is a <a href="boot.htm">boot</a> manager that hides/shows <a href="part.htm">part</a>itions at <a href="boot.htm">boot</a> time and allows to <a href="boot.htm">boot</a> up to 10 primary <a href="part.htm">part</a>itions per HD</span><br/>
+<br/>
+<a class="ext" href="http://Chameleon.OSX86.hu">Chameleon.OSX86.hu</a> <span class="quot2">>>It seems that <a href="curr.htm">curr</a>ent <a href="boot.htm">boot</a> loaders for <a href="mac.htm">Mac</a> OS X on white boxes either lacks of all cool features or has many of the cool features but the <a href="sourc.htm">sourc</a>es are kept closed. With Chameleon you can have all benefits of features while you can inspect/bugfix/extend the codebase.</span><br/>
+<br/>
+<a class="ext" href="http://Denx.de/wiki/U-Boot">Denx.de/wiki/U-Boot</a> and <a class="ext" href="http://U-Boot.sf.net">U-Boot.sf.net</a> <small>(was <a class="ext" href="http://PPCBoot.sf.net">PPCBoot.sf.net</a>)</small> <span class="quot2">>>This directory contains the <a href="sourc.htm">sourc</a>e code for U-<a href="boot.htm">Boot</a>, a <a href="boot.htm">boot</a> loader for Embedded boards based on PowerPC, ARM, MIPS and several other processors, which can be <a href="install.htm">install</a>ed in a <a href="boot.htm">boot</a> ROM and <a href="use.htm">use</a>d to initialize and test the <a href="hard.htm">hard</a>ware or to download and run application code.</span><br/>
+<br/>
+<a class="ext" href="http://BtMgr.sf.net">BtMgr.sf.net</a> <span class="quot2">>>Smart <a href="boot.htm">Boot</a>Manager is an os independent <a href="boot.htm">Boot</a>Manager which has easy to <a href="use.htm">use</a> interface and many other features. The main goals of SBM are to be absolutely OS independent, flexible and full-featured. It has all of the features needed to <a href="boot.htm">boot</a> a variety of OS.</span><br/>
+<br/>
+<a class="ext" href="http://GNU.org/software/grub">GNU.org/software/grub</a> <span class="quot2">>>GRUB, Grand Unified <a href="boot.htm">Boot</a> Loader</span><br/>
+<br/>
+<a class="ext" href="http://SuperGRUBDisk.org">SuperGRUBDisk.org</a> <span class="quot2">>>We want Linux newbies to <a href="restor.htm">restor</a>e their new toy, but also help the Linux advanced <a href="user.htm">user</a> <a href="mak.htm">mak</a>e potentially dangerous operations to the MBR in a safe way. Super Grub <a href="disk.htm">Disk</a> is also a teaching tool to help you learn more about <a href="boot.htm">boot</a>loaders and the <a href="boot.htm">boot</a>ing process. After all, <a href="boot.htm">boot</a>ing is the most important thing your <a href="compu.htm">compu</a>ter does -- without the <a href="boot.htm">boot</a> process, you would not have an <a href="operating system.htm">operating system</a> to <a href="use.htm">use</a>!</span><br/>
+<br/>
+<a class="ext" href="http://Gujin.org">Gujin.org</a> <span class="quot2">>>Gujin is <a href="gpl.htm">Gpl</a> <a href="use.htm">Use</a> of the Jnp INstruction</span><br/>
+<br/>
+<a class="ext" href="http://PLoP.at/bootmanager_en.html">PLoP.at/bootmanager_en.html</a> <span class="quot2">>>The PLoP <a href="boot.htm">Boot</a> Manager is a small program to <a href="boot.htm">boot</a> <a href="diff.htm">diff</a>e<a href="rent.htm">rent</a> <a href="operating system.htm">operating system</a>s. You can <a href="boot.htm">boot</a> the <a href="operating system.htm">operating system</a>s from <a href="hard.htm">hard</a><a href="disk.htm">disk</a>, floppy, CD/DVD or from <a href="usb.htm">USB</a>. You can <a href="start.htm">start</a> the <a href="boot.htm">boot</a> manager from floppy, CD, <a href="net.htm">net</a><a href="work.htm">work</a> and there are many more ways to <a href="start.htm">start</a> the <a href="boot.htm">boot</a> manager. You can <a href="install.htm">install</a> the <a href="boot.htm">boot</a> manager on your <a href="hard.htm">hard</a><a href="disk.htm">disk</a>. There is no extra <a href="part.htm">part</a>ition required for the <a href="boot.htm">boot</a> manager.</span><br/>
+<br/>
+<a class="ext" href="http://GAG.sf.net">GAG.sf.net</a> <span class="quot2">>>GAG <small>(initials, in spanish, of Graphical <a href="boot.htm">Boot</a> Manager)</small> is a <a href="boot.htm">Boot</a> Manager program. It's loaded when the <a href="compu.htm">compu</a>ter is turned on and allows you to choose the <a href="operating system.htm">operating system</a> you want to <a href="use.htm">use</a>.</span><br/>
+<br/>
+<a class="ext" href="http://XOSL.sf.net">XOSL.sf.net</a> <span class="quot2">>>XOSL is a graphical <a href="boot.htm">boot</a> manager released by Geurt Vos under <a href="gpl.htm">GPL</a>.&nbsp;&nbsp;XOSL can dual <a href="boot.htm">boot</a> over 30 various <a href="operating system.htm">operating system</a>s on a single <a href="disk.htm">disk</a>.</span><br/>
+<br/>
+<a class="ext" href="http://Elinux.org/Boot_Time">Elinux.org/Boot_Time</a> <span class="quot2">>>This page has information about reducing <a href="boot.htm">boot</a>-up time for a Linux system. This is of interest for many embedded developers, because for many <a href="produc.htm">produc</a>ts customers expect to be able to <a href="use.htm">use</a> them very soon after system <a href="start.htm">start</a>up.</span><br/>
+<br/>
+<a class="ext" href="http://SolemnWarning.net/kexec-loader">SolemnWarning.net/kexec-loader</a> <span class="quot2">>>kexec-loader is a Linux based <a href="boot.htm">boot</a>loader that <a href="use.htm">use</a>s kexec to <a href="start.htm">start</a> the kernel of your choice. It fits on a 1.44MB floppy, supports most block devices supported by Linux and is easy to <a href="use.htm">use</a>. kexec-loader supports reading GRUB configuration <a href="file.htm">file</a>s, this allows kexec-loader to be <a href="use.htm">use</a>d as a drop-in replacement for GRUB by merely setting the GRUB <a href="install.htm">install</a>ation path.</span><br/>
+<br/>
+<a class="ext" href="http://XMission.com/~ebiederm/files/kexec/README">XMission.com/~ebiederm/files/kexec/README</a> <span class="quot2">>>kexec is a set of systems call that allows you to load another kernel from the <a href="curr.htm">curr</a>ently executing Linux kernel.&nbsp;&nbsp;The <a href="curr.htm">curr</a>ent implementation has only been tested, and had the kinks <a href="work.htm">work</a>ed out on x86, but the generic code should <a href="work.htm">work</a> on any architecture.</span><br/>
+<br/>
+<a class="ext" href="http://bootimg.sf.net">bootimg.sf.net</a> <span class="quot2">>><small>(<a href="boot.htm">boot</a>img has served its purpose as a proof of concept, and is no longer being <a href="work.htm">work</a>ed on. Please <a href="use.htm">use</a>s Eric Biederman's kexec instead.)</small>&nbsp;&nbsp;<a href="boot.htm">boot</a>img provides the ultimate <a href="boot.htm">boot</a> loader - the Linux kernel itself.&nbsp;&nbsp;<a href="boot.htm">Boot</a>ing a Linux kernel from under Linux allows multi-stage <a href="boot.htm">boot</a> procedures where a comparably simple <a href="boot.htm">boot</a> loader can load the first Linux kernel <small>(possibly with an initial RAM <a href="disk.htm">disk</a>)</small> from whatever <a href="stor.htm">stor</a>age is convenient, and this kernel can then <a href="use.htm">use</a> the full functionality of a Linux system to retrieve the "<a href="real.htm">real</a>" kernel.</span><br/>
+<br/>
+<a class="ext" href="http://TBoot.sf.net">TBoot.sf.net</a> <span class="quot2">>>Trusted <a href="boot.htm">Boot</a> <small>(t<a href="boot.htm">boot</a>)</small> is an open <a href="sourc.htm">sourc</a>e, pre- kernel/VMM <a href="mod.htm">mod</a>ule that <a href="use.htm">use</a>s Intel<small>(R)</small> Trusted Execution Technology <small>(Intel<small>(R)</small> TXT)</small> to perform a measured and verified launch of an OS kernel/VMM.</span><br/>
+<br/>
+<a class="ext" href="http://BusyBox.net/~vda/mboot">BusyBox.net/~vda/mboot</a> <span class="quot2">>>Multi<a href="boot.htm">Boot</a> is a master <a href="boot.htm">boot</a> record with ability to interactively select which <a href="part.htm">part</a>ition to <a href="boot.htm">boot</a>. It doesn't try to do fancy things and extend MBR format in fancy non-compatible ways. MBR which has multi<a href="boot.htm">boot</a> <a href="install.htm">install</a>ed in it continues to be perfectly "normal" MBR for BIOS, OSes and f<a href="disk.htm">disk</a>-like utilities.</span><br/>
+<br/>
+<a class="ext" href="http://IBM.com/developerworks/linux/library/l-boot-rootfs/index.html?ca=dgr-lnxw06rootfs&S_TACT=105AGX59&S_CMP=grsitelnxw06">IBM.com/developerworks/linux/library/l-boot-rootfs/index.html?ca=dgr-lnxw06rootfs&S_TACT=105AGX59&S_CMP=grsitelnxw06</a> <span class="quot2">>>Finding rootfs during <a href="boot.htm">boot</a> Four tips on how to "rediscover" a missing root <a href="file.htm">file</a> system after adding <a href="stor.htm">stor</a>age devices and adapters</span><br/>
+<br/>
+<a class="ext" href="http://Technet.Microsoft.com/en-us/library/cc749177.aspx">Technet.Microsoft.com/en-us/library/cc749177.aspx</a> <span class="quot2">>><a href="boot.htm">Boot</a><a href="sect.htm">sect</a>.exe updates the master <a href="boot.htm">boot</a> code for <a href="hard.htm">hard</a> <a href="disk.htm">disk</a> <a href="part.htm">part</a>itions to switch between <a href="boot.htm">BOOT</a>MGR and NTLDR. You can <a href="use.htm">use</a> this tool to <a href="restor.htm">restor</a>e the <a href="boot.htm">boot</a> <a href="sect.htm">sect</a>or on your <a href="compu.htm">compu</a>ter. This tool replaces FixFAT and FixNTFS.</span><br/>
+<br/>
+----<br/>
+<span class="quot">"'<a href="boot.htm">BOOT</a>ING FROM <a href="hard.htm">HARD</a> DRIVE<br/>
+<br/>
+Things needed:<br/>
+A Lilo or GRUB <a href="boot.htm">boot</a> loader <a href="install.htm">install</a>ed and <a href="work.htm">work</a>ing.<br/>
+The lastest <a href="part.htm">Part</a>ed Magic iso.<br/>
+A <a href="work.htm">work</a>ing Linux Distro.<br/>
+<br/>
+First we'll open the iso <a href="file.htm">file</a> with these comands:<br/>
+<br/>
+<span class="shell">$ mkdir iso</span><br/>
+<span class="shell">$ <a href="mount.htm">mount</a> -o loop /path/to/iso/<a href="part.htm">part</a>edmagic-<a href="liv.htm">liv</a>ecd-1.X.iso iso</span><br/>
+<span class="shell">$ cd iso</span><br/>
+<span class="shell">$ ls</span><br/>
+<br/>
+<a href="part.htm">part</a>edmagic isolinux<br/>
+<br/>
+I have decided to <a href="boot.htm">boot</a> from my windows drive that is <a href="mount.htm">mount</a>ed on /mnt/windows:<br/>
+<br/>
+patrick@<a href="part.htm">part</a>edmagic:~/iso$ cp -a * /mnt/winows<br/>
+<br/>
+I need to update my <a href="boot.htm">boot</a> loader so it can find the bz<a href="imag.htm">Imag</a>e and initrd <a href="file.htm">file</a>s. My windows<br/>
+drive is /dev/hda1.<br/>
+<br/>
+For GRUB add this to <a href="menu.htm">menu</a>.lst:<br/>
+<br/>
+<a href="title.htm">title</a> <a href="part.htm">part</a>edmagic<br/>
+root <small>(hd0,0)</small><br/>
+kernel /isolinux/bz<a href="imag.htm">Imag</a>e root=/dev/ram0 initrd=initrd init=/linuxrc ram<a href="disk.htm">disk</a>_size=67000<br/>
+initrd /isolinux/initrd<br/>
+<br/>
+For lilo add this to lilo.conf:<br/>
+<br/>
+<a href="imag.htm">imag</a>e= /mnt/windows/isolinux/bz<a href="imag.htm">Imag</a>e<br/>
+label = <a href="part.htm">part</a>edmagic<br/>
+initrd = /mnt/windows/isolinux/initrd<br/>
+append = "init=/linuxrc"<br/>
+root = /dev/ram0<br/>
+ram<a href="disk.htm">disk</a>=67000<br/>
+<br/>
+Be sure to run /sbin/lilo!<br/>
+<br/>
+Now re<a href="boot.htm">boot</a> the <a href="compu.htm">compu</a>ter and select <a href="part.htm">part</a>edmagic from the <a href="boot.htm">boot</a> <a href="menu.htm">menu</a>. When the <a href="part.htm">Part</a>ed Magic <a href="liv.htm">Liv</a>eCD/<a href="usb.htm">USB</a> Extra <a href="boot.htm">Boot</a> Options comes up select "<a href="pic.htm">Pic</a>k <a href="boot.htm">boot</a> device".<br/>
+<br/>
+Now type the name of the device to <a href="boot.htm">boot</a> from in the box.<br/>
+<br/>
+After hitting "OK" we will be returned to the main <a href="menu.htm">menu</a>. Select "Done" and the system<br/>
+will <a href="boot.htm">boot</a>.<br/>
+<br/>
+That's it!<br/>
+'"</span> -- <a class="ext" href="http://PartedMagic.com/docs/harddriveboot.txt">PartedMagic.com/docs/harddriveboot.txt</a><br/>
+<br/>
+<br/>
+<a class="ext" href="http://BootStrap.org">BootStrap.org</a><br/>
+<br/>
+<a class="ext" href="http://BootstrapBootcamp.com">BootstrapBootcamp.com</a> <span class="quot2">>>The <a href="boot.htm">Boot</a>strap <a href="boot.htm">Boot</a><a href="cam.htm">cam</a>p&nbsp;&nbsp;&nbsp;&nbsp;A Crash Course in <a href="boot.htm">Boot</a>strapping your Business</span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://UBCD4Win.net">UBCD4Win.net</a> <small>(non-<a href="free.htm">Free</a>)</small> <span class="quot2">>>UBCD4Win is a <a href="boot.htm">boot</a>able <a href="recover.htm">recover</a>y CD that contains software <a href="use.htm">use</a>d for repairing, <a href="restor.htm">restor</a>ing, or diagnosing almost any <a href="compu.htm">compu</a>ter problem. Our goal is to be the most complete and easy to <a href="use.htm">use</a> <a href="free.htm">free</a> <a href="compu.htm">compu</a>ter diagnostic tool. Almost all software included in UBCD4Win are <a href="free.htm">free</a>ware utilities for Windows®. Some of the tools inlcuded are "<a href="free.htm">free</a> for personal <a href="use.htm">use</a>" copies so <a href="user.htm">user</a>s need to respect these licenses. A few of the tools included in UBCD4Win are paid for and licensed software <a href="own.htm">own</a>ed by UBCD4win. On occasion we <a href="work.htm">work</a> with software companies/authors for permission to include their software in our download or have requested their software better support PE. <a href="user.htm">User</a>s can <a href="free.htm">free</a>ly share copies of UBCD4Win with friends but selling UBCD4Win for a <a href="profit.htm">profit</a> is not acceptable. We have <a href="work.htm">work</a>ed <a href="hard.htm">hard</a> for many years helping people for <a href="free.htm">free</a> with this project, others should not <a href="mak.htm">mak</a>e <a href="mone.htm">mone</a>y from our <a href="hard.htm">hard</a> <a href="work.htm">work</a>. If you are a dialup <a href="user.htm">user</a> having a <a href="hard.htm">hard</a> time downloading UBCD4Win, please visit our ordering page. UBCD4Win is based on Bart's PE©. Bart's PE© <a href="buil.htm">buil</a>ds a Windows® "pre-<a href="install.htm">install</a>" environment CD, basically a simple Windows® XP <a href="boot.htm">boot</a>ed from CD. UBCD4Win includes <a href="net.htm">net</a><a href="work.htm">work</a> support and allows you the ability to <a href="mod.htm">mod</a>ify NTFS volumes, <a href="recover.htm">recover</a> <a href="delet.htm">delet</a>ed <a href="file.htm">file</a>s, create new NTFS volumes, scan <a href="hard.htm">hard</a> drives for viruses, etc. Our download includes almost everything you need to repair your system problems. This project has been put together to be the ultimate <a href="recover.htm">recover</a>y cd and not a replacement OS <small>(<a href="operating system.htm">Operating System</a>)</small>. Please visit the "List of Tools" page for a complete list of what is included in the latest version of UBCD4Win.</span><br/>
+<br/>
+<br/>
+<span class="shell">$ <a href="boot.htm">boot</a><a href="sect.htm">sect</a>.exe #From the WAIK or Win7/2008R2 iso</span><br/>
+<span class="shell">$ <a href="boot.htm">boot</a>rec.exe # <a class="ext" href="http://Support.Microsoft.com/kb/927392">Support.Microsoft.com/kb/927392</a> <span class="quot2">>>How to <a href="use.htm">use</a> the <a href="boot.htm">Boot</a>rec.exe tool in the Windows <a href="recover.htm">Recover</a>y Environment to troubleshoot and repair <a href="start.htm">start</a>up issues in Windows Vista</span></span><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<a class="ext" href="http://www.Clusters.UMaine.edu/projects/notp">www.Clusters.UMaine.edu/projects/notp</a> <span class="quot2">>>Nick of Time Provisioning&nbsp;&nbsp;&nbsp;&nbsp;notP is a loose coterie of applications that, when combined, provide a simple means for the <a href="admin.htm">admin</a>istrator to quickly force nodes to <a href="boot.htm">boot</a> into various OS <a href="imag.htm">imag</a>es. While it can be <a href="use.htm">use</a>d as a stand-alone application, notP was designed to be <a href="use.htm">use</a>d by Moab/Maui and Torque in a HPC environment, quickly provisioning nodes per <a href="user.htm">user</a> demand.</span><br/>
+<br/>
+<a class="ext" href="http://alter.org.ua">alter.org.ua</a> <span class="quot2">>> read_<a href="boot.htm">boot</a>: for reading MBRs and <a href="boot.htm">BOOT</a>-<a href="sect.htm">sect</a>ors.&nbsp;&nbsp;FastRe<a href="boot.htm">boot</a>: Re<a href="boot.htm">boot</a> Windows quickly.</span><br/>
+<br/>
+<a class="ext" href="http://Boot-Land.net">Boot-Land.net</a> <span class="quot2">>>Home of the smallest XP ever <a href="buil.htm">buil</a>t!</span><br/>
+<br/>
+<a class="ext" href="http://Bootchart.org">Bootchart.org</a> <span class="quot2">>><a href="boot.htm">Boot</a>chart is a tool for performance analysis and visualization of the <a href="gnu.htm">GNU</a>/Linux <a href="boot.htm">boot</a> process. Re<a href="sourc.htm">sourc</a>e utilization and process information are collected during the <a href="boot.htm">boot</a> process and are later rendered in a PNG, SVG or EPS encoded chart.</span><br/>
+<br/>
+----<br/>
+Change /etc/conf/rc:<br/>
+RC_PARALLEL_<a href="start.htm">START</a>UP="no"<br/>
+RC_PARALLEL_<a href="start.htm">START</a>UP="yes"<br/>
+<br/>
+Change /etc/inittab:<br/>
+l5:5:wait:/etc/rc.d/rc 5<br/>
+l5:5:wait:/etc/rc.d/rc 5 &amp;<br/>
+<br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/boot">boot</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>

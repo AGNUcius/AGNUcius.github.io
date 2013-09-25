@@ -1,0 +1,23 @@
+Related: GNUnix, LazyLoad, pack, pkgmgr
+
+See ~/.bash_aliases for most recent version of these commands
+
+
+The "pkg" project attempts to hide differences among the various package management tools.
+
+Update all installed software:
+$ alias pkg.up='sudo apt-get update; sudo apt-get upgrade'
+
+List all installed software:
+$ alias pkg.list='dpkg -l'
+
+Search through all available software:
+$ alias pkg.find
+
+Install by registered NAME:
+$ alias pkg.add
+
+Install through unregistered FILE:
+
+$ alias pkg.del sudo apt-get --purge remove
+

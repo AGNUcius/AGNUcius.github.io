@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>install  </title>
+  <link href=".code/preferred.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<p class='header'>
+<a href="_home.htm">Home</a> | <a href="_faq.htm">FAQ</a> | <a href="_thesis.htm">Thesis</a> | <a href="_diary.htm">Diary</a> | <a href="_projects.htm">Projects</a> | <a href="resume.htm">Resume</a> | <a href="_todo.htm">Todo</a> | <a href="_index.htm">Index</a> |<p>
+<p class='main'><span class="rel">Related:</span> begin, <a href="boot.htm">boot</a>, <a href="buil.htm">buil</a>d, clean, CM, deploy, dev, devlog, <a href="gnunix.htm">GNUnix</a>, <a href="installshield.htm">InstallShield</a>, <a href="msi.htm">MSI</a>, <a href="pack.htm">pack</a>, <a href="prop.htm">prop</a>agate, setup, WiX<br/>
+<br/>
+<a class="ext" href="http://EmacsWiki.org/cgi-bin/emacs/install-elisp.el">EmacsWiki.org/cgi-bin/emacs/install-elisp.el</a> <span class="quot2">>></span><br/>
+<br/>
+<span class="h2">==<a href="gnu.htm">GNU</a>/Linux</span><br/>
+<a href="pack.htm">pack</a>aging, distribution<br/>
+<br/>
+<a class="ext" href="http://FAI-Project.org">FAI-Project.org</a> <span class="quot2">>>FAI is a non-interactive system to <a href="install.htm">install</a>, customize and manage Linux systems and software configurations on <a href="compu.htm">compu</a>ters as well as <a href="virt.htm">virt</a>ual <a href="mac.htm">mac</a>hines and chroot environments, from small <a href="net.htm">net</a><a href="work.htm">work</a>s to large-scale infrastructures and clusters.&nbsp;&nbsp;It's a tool for unattended mass deployment of Linux. You can take one or more virgin PC's, turn on the power, and after a few minutes, the systems are <a href="install.htm">install</a>ed, and completely configured to your exact needs, without any interaction necessary.</span><br/>
+<br/>
+<span class="h2">==Windows</span><br/>
+<a class="ext" href="http://TestingReflections.com/node/view/4839">TestingReflections.com/node/view/4839</a><br/>
+<span class="quot">"'<br/>
+HKEY_LOCAL_<a href="mac.htm">MAC</a>HINE\Software\Policies\Microsoft\Windows\<a href="install.htm">Install</a>er<br/>
+# Add the following string value to the <a href="install.htm">Install</a>er directory: Logging<br/>
+# Add the following data/value to the Logging string value: voicewarmup<br/>
+<br/>
+The letters in the value field can be in any order. Each letter turns on a <a href="diff.htm">diff</a>e<a href="rent.htm">rent</a> logging <a href="mod.htm">mod</a>e. Each letter's actual function is as follows for <a href="msi.htm">MSI</a> version 1.1:<br/>
+v - Verbose output<br/>
+o - Out-of-<a href="disk.htm">disk</a>-<a href="spac.htm">spac</a>e messages<br/>
+i - <a href="stat.htm">Stat</a>us messages<br/>
+c - Initial UI parameters<br/>
+e - All error messages<br/>
+w - Non-fatal warnings<br/>
+a - <a href="start.htm">Start</a> up of actions<br/>
+r - Action-specific records<br/>
+m - Out-of-memory or fatal exit information<br/>
+u - <a href="user.htm">User</a> requests<br/>
+p - Terminal <a href="proper.htm">proper</a>ties<br/>
+<span class="bullet">+</span> - Append to existing <a href="file.htm">file</a><br/>
+! - Flush each line to the log<br/>
+'"</span><br/>
+<small>[----<a href="file.htm">FILE</a>:Windows_<a href="install.htm">Install</a>er_Logging.reg<br/>
+REG<a href="edit.htm">EDIT</a>4<br/>
+<br/>
+<small>[HKEY_LOCAL_<a href="mac.htm">MAC</a>HINE\SOFTWARE\Policies\Microsoft\Windows\<a href="install.htm">Install</a>er]</small><br/>
+"Logging"="voicewarmup!"<br/>
+"Debug"=dword:00000007<br/>
+;"Always<a href="install.htm">Install</a>Elevated"=dword:00000001<br/>
+----]</small><br/>
+<br/>
+<a class="ext" href="http://InstallSite.org/pages/en/msifaq/a/1022.htm">InstallSite.org/pages/en/msifaq/a/1022.htm</a> <span class="quot2">>>How do I create a log <a href="file.htm">file</a> of my <a href="install.htm">install</a>ation?</span><br/>
+<small>[----<a href="file.htm">FILE</a>:<a href="installshield.htm">InstallShield</a>_SetupExeLog.reg<br/>
+REG<a href="edit.htm">EDIT</a>4<br/>
+<br/>
+<small>[HKEY_<a href="curr.htm">CURR</a>ENT_<a href="user.htm">USER</a>\Software\<a href="installshield.htm">InstallShield</a>\ISWI\3.0\SetupExeLog]</small><br/>
+"VerboseLog<a href="file.htm">File</a>Name"=<a class="ext" href="file:///C:\VerboseLog.log">"C:\VerboseLog.log"</a><br/>
+----]</small><br/>
+<br/>
+<br/>
+<a class="ext" href="http://MSDN.Microsoft.com/en-us/library/cc185688%28VS.85%29.aspx">MSDN.Microsoft.com/en-us/library/cc185688%28VS.85%29.aspx</a> <span class="quot2">>>Microsoft Windows <a href="install.htm">Install</a>er is an <a href="install.htm">install</a>ation and configuration service provided with Windows. The <a href="install.htm">install</a>er service enables customers to provide better corporate deployment and provides a standard format for component management. The <a href="install.htm">install</a>er also enables the advertisement of applications and features according to the <a href="operating system.htm">operating system</a>. For more information, see&nbsp;&nbsp;Platform Support of Advertisement .</span><br/>
+<br/>
+<a class="ext" href="http://WAI.CodePlex.com">WAI.CodePlex.com</a> <span class="quot2">>>As you have experienced yourself developing a <a href="web.htm">web</a> application isn't that easy and quite time consuming. You spend a lot of hours thinking about software design, security problems and of course how to improve end <a href="user.htm">user</a>'s usability. Why not lowering the barrier for <a href="install.htm">install</a>ing <small>(trying out)</small> your software - using a common technology.</span><br/>
+<br/>
+<a class="ext" href="http://Wubi-Installer.org">Wubi-Installer.org</a> <span class="quot2">>>Wubi is an officially supported Ubuntu <a href="install.htm">install</a>er for Windows <a href="user.htm">user</a>s that can bring you to the Linux world with a single click. Wubi allows you to <a href="install.htm">install</a> and un<a href="install.htm">install</a> Ubuntu as any other Windows application, in a simple and safe way.</span><br/>
+<br/>
+<a class="ext" href="http://Unattended.sf.net">Unattended.sf.net</a> <span class="quot2">>>Automating the <a href="install.htm">install</a>ation of Windows 2000 Professional and Server, Windows XP, and Windows Server 2003.</span><br/>
+<br/>
+<a class="ext" href="http://CodePlex.com/dotnetinstaller">CodePlex.com/dotnetinstaller</a> <span class="quot2">>>dotNet<a href="install.htm">Install</a>er is a general-purpose setup <a href="boot.htm">boot</a>strapper for Microsoft Windows.&nbsp;&nbsp;dotNet<a href="install.htm">Install</a>er enables the developer to define the application prerequisites and <a href="install.htm">install</a> the correct version<small>(s)</small> of these components in a predictable order based on the processor architecture, <a href="user.htm">user</a> <a href="operating system.htm">operating system</a> type and language, allow the <a href="user.htm">user</a> to download these components from the <a href="web.htm">web</a>, <a href="install.htm">install</a> these components directly from a single <a href="pack.htm">pack</a>aged setup, local media or both. dotNet<a href="install.htm">Install</a>er is very feature rich and runs on all <a href="know.htm">know</a>n Windows <a href="operating system.htm">operating system</a>s with a very tiny footprint.</span><br/>
+<br/>
+<a class="ext" href="http://Support.Microsoft.com/kb/936209">Support.Microsoft.com/kb/936209</a> <span class="quot2">>>How to <a href="use.htm">use</a> the Ocsetup.exe tool to <a href="install.htm">install</a> or to remove Windows optional components in Windows Vista</span><br/>
+<br/>
+<a class="ext" href="http://MSDN.Microsoft.com/en-us/library/aa370834(VS.85).aspx">http://MSDN.Microsoft.com/en-us/library/aa370834(VS.85).aspx</a> <span class="quot2">>>The components of the Windows <a href="install.htm">Install</a>er Software Development Kit are included in the Microsoft Windows Software Development Kit <small>(<a href="sdk.htm">SDK</a>)</small>. The Windows <a href="sdk.htm">SDK</a> includes redistributable components, documentation, <a href="install.htm">install</a>er database validation tool, database table <a href="edit.htm">edit</a>or, database schema, development tools, Visual Basic Scripting <a href="edit.htm">Edit</a>ion <small>(VBScript)</small> tools, sample <a href="produc.htm">produc</a>t, and code samples.</span><br/>
+<br/>
+<a class="ext" href="http://Tromey.com/elpa">Tromey.com/elpa</a> <span class="quot2">>>Welcome to ELPA, the <a href="emacs.htm">Emacs</a> Lisp <a href="pack.htm">Pack</a>age Archive. Our goal is to <a href="mak.htm">mak</a>e it simple to <a href="install.htm">install</a>, <a href="use.htm">use</a>, and upgrade <a href="emacs.htm">Emacs</a> Lisp <a href="pack.htm">pack</a>ages. We supply <a href="pack.htm">pack</a>age.el, a simple <a href="pack.htm">pack</a>age manager for <a href="emacs.htm">Emacs</a>, and a repository of pre-<a href="pack.htm">pack</a>ed <a href="emacs.htm">Emacs</a> Lisp code.</span><br/>
+<br/>
+<a class="ext" href="http://Blog.BigSwingingDeveloper.com">Blog.BigSwingingDeveloper.com</a> <span class="quot2">>></span><br/>
+<br/>
+<a class="ext" href="http://Blogs.MSDN.com/windows_installer_team">Blogs.MSDN.com/windows_installer_team</a> <span class="quot2">>>Windows <a href="install.htm">Install</a>er Team Blog</span><br/>
+<br/>
+<a class="ext" href="http://FedoraHosted.org/cobbler">FedoraHosted.org/cobbler</a> <span class="quot2">>>Cobbler is a Linux <a href="install.htm">install</a>ation server that allows for rapid setup of <a href="net.htm">net</a><a href="work.htm">work</a> <a href="install.htm">install</a>ation environments.</span><br/>
+<br/>
+<a class="ext" href="http://MSMVPS.com/blogs/installsite">MSMVPS.com/blogs/installsite</a> <span class="quot2">>>This blog complements the <a class="ext" href="http://InstallSite.org">InstallSite.org</a> <a href="web.htm">web</a> site which is run by Stefan Krueger. For comments and follow up questions please <a href="use.htm">use</a> the <a href="install.htm">Install</a>Site Forum.&nbsp;&nbsp;Stefan is a software engineer specializing in setup technologies.&nbsp;&nbsp;He has been awared vy Microsoft as an MVP <small>(Most Valuable Professional)</small> for the Windows <a href="install.htm">Install</a>er <small>(<a href="msi.htm">MSI</a>)</small> technology.&nbsp;&nbsp;You can find his bio at <a class="ext" href="https://mvp.support.microsoft.com/profile/Stefan.Krueger">https://mvp.support.microsoft.com/profile/Stefan.Krueger</a></span><br/>
+<br/>
+<a class="ext" href="http://blogs.msdn.com/astebner/default.aspx">http://blogs.msdn.com/astebner/default.aspx</a> <span class="quot2">>>Thoughts about setup and deployment issues, XNA, Windows Media Center, the .<a href="net.htm">NET</a> Frame<a href="work.htm">work</a> and Visual Studio</span><br/>
+<br/>
+<a class="ext" href="http://GeeksWithBlogs.net/ajshurts">GeeksWithBlogs.net/ajshurts</a> <span class="quot2">>>Demystifying Windows Setups Windows <a href="install.htm">Install</a>er and the Technology That Surrounds It</span><br/>
+<br/>
+<a class="ext" href="http://JoyOfSetup.com">JoyOfSetup.com</a> <span class="quot2">>>During the day, I'm a developer in Microsoft <a href="game.htm">Game</a> Studios for the ACES Studio, <a href="mak.htm">mak</a>ers of Flight Simulator, Train Simulator, and Microsoft ESP. I'm on the Platform team, focusing on setup, servicing, and extensibility. In my copious spare time, I'm a volunteer member of the core WiX <a href="virt.htm">virt</a>ual team, dabbling in the chainer, <a href="compile.htm">compile</a>r, extensions, and custom actions.</span><br/>
+<br/>
+<span class="h2">==Win32:</span><br/>
+<a class="ext" href="http://WPKG.org">WPKG.org</a> <span class="quot2">>>WPKG is an automated software deployment, upgrade and removal program for Windows. It can be <a href="use.htm">use</a>d to push/pull software <a href="pack.htm">pack</a>ages, such as Service <a href="pack.htm">Pack</a>s, hotfixes, or program <a href="install.htm">install</a>ations from a central server <small>(for example, Samba or Active Directory)</small> to a number of <a href="work.htm">work</a><a href="stat.htm">stat</a>ions. It can run as a service to <a href="install.htm">install</a> software in the <a href="back.htm">back</a>ground <small>(silent <a href="install.htm">install</a>)</small>, without <a href="user.htm">user</a> interaction. It can <a href="install.htm">install</a> <a href="msi.htm">MSI</a>, <a href="installshield.htm">InstallShield</a>, <a href="pack.htm">Pack</a>agefortheWeb, Inno Setup, Nullsoft, other software <a href="install.htm">install</a>ers or .exe <a href="pack.htm">pack</a>ages, .bat and .cmd scripts and similar: no more re<a href="pack.htm">pack</a>aging to perform software <a href="install.htm">install</a>ation. WPKG is open <a href="sourc.htm">sourc</a>e software.</span><br/>
+<br/>
+<a class="ext" href="http://Wistinga.Online.fr/safarp">Wistinga.Online.fr/safarp</a> <span class="quot2">>>SafARP is a small and fast alternative to the Add or Remove Programs Control Panel applet of Windows 2000/XP. It displays a list of the <a href="install.htm">install</a>ed programs and allows one to un<a href="install.htm">install</a> / repair them.</span><br/>
+<br/>
+<span class="shell">$ reg.exe query HKLM\Software\Microsoft\Windows\<a href="curr.htm">Curr</a>entVersion\Un<a href="install.htm">install</a></span><br/>
+<span class="shell">$ reg.exe query "HKLM\Software\Microsoft\Windows\<a href="curr.htm">Curr</a>entVersion\App Paths"</span><br/>
+<br/>
+<br/>
+WiX<br/>
+<br/>
+<a class="ext" href="http://Omaha.GoogleCode.com">Omaha.GoogleCode.com</a> <span class="quot2">>>Omaha, otherwise <a href="know.htm">know</a>n as Google Update, is a program to <a href="install.htm">install</a> requested software and keep it up to date. So far, Omaha supports many Google <a href="produc.htm">produc</a>ts for Windows, including Google Chrome and Google Earth, but there is no reason for it to only support Google <a href="produc.htm">produc</a>ts.</span><br/>
+<br/>
+<a class="ext" href="http://NSIS.sf.net">NSIS.sf.net</a> <span class="quot2">>>NSIS <small>(Nullsoft Scriptable <a href="install.htm">Install</a> System)</small> is a professional open <a href="sourc.htm">sourc</a>e system to create Windows <a href="install.htm">install</a>ers. It is designed to be as small and flexible as possible and is therefore very suitable for internet distribution.</span><br/>
+<a class="ext" href="http://HMNE.sf.net">HMNE.sf.net</a> <span class="quot2">>>HM NIS <a href="edit.htm">Edit</a> is the best <a href="edit.htm">Edit</a>or/<a href="ide.htm">IDE</a> for Nullsoft Scriptable <a href="install.htm">Install</a> System <small>(NSIS)</small>. Its <a href="use.htm">use</a>ful for experts and beginners in the creation of Setup programs with the NSIS. Its Script Wizard will help you to create standard Setup programs with only few clicks, also its <a href="install.htm">Install</a>Options designer will help you to create your <a href="own.htm">own</a> custom pages with a friendly drag and drop interface.</span><br/>
+<a class="ext" href="http://sf.net/projects/nsis-scriptgen">sf.net/projects/nsis-scriptgen</a> The Intelligent NSIS Script Generator is a software for generating scripts for the SuperPimp <a href="install.htm">install</a>er by Nullsoft. The software has been designed in such a way that it intelligently generates scripts <a href="mak.htm">mak</a>ing it very easy to <a href="use.htm">use</a> both for the expert <a href="user.htm">user</a> a<br/>
+<a class="ext" href="http://ExperienceUI.xx0r.info">ExperienceUI.xx0r.info</a> <span class="quot2">>>Development on the ExperienceUI has all but ceased.</span><br/>
+<br/>
+<a class="ext" href="http://InnoSetup.com">InnoSetup.com</a> <small>(pascal)</small><span class="quot2">>>Inno Setup is a <a href="free.htm">free</a> <a href="install.htm">install</a>er for Windows programs. First introduced in 1997, Inno Setup today rivals and even sur<a href="pass.htm">pass</a>es many commercial <a href="install.htm">install</a>ers in feature set and stability.</span><br/>
+<br/>
+<br/>
+Orca is a simple, direct <a href="msi.htm">MSI</a> database manipulator.<br/>
+<br/>
+<a href="installshield.htm">InstallShield</a> <small>(<a href="prop.htm">prop</a>rietary)</small><br/>
+<br/>
+<br/>
+<span class="h2">==<a href="gnu.htm">GNU</a></span><br/>
+<a class="ext" href="http://InstallJammer.com">InstallJammer.com</a> <span class="quot2">>><a href="install.htm">Install</a>Jammer - A <a href="free.htm">free</a>, open <a href="sourc.htm">sourc</a>e, multiplatform <a href="install.htm">install</a>er and <a href="buil.htm">buil</a>der</span><br/>
+<br/>
+<a class="ext" href="http://AutoPackage.org">AutoPackage.org</a> <span class="quot2">>>This is Auto<a href="pack.htm">pack</a>age, the multi-distribution binary <a href="pack.htm">pack</a>aging frame<a href="work.htm">work</a> for Linux systems.&nbsp;&nbsp;&nbsp;&nbsp;We also provide a collection of tools to let you <a href="buil.htm">buil</a>d high quality portable binaries.&nbsp;&nbsp;The most important is ap<a href="buil.htm">buil</a>d, which is a drop-in <a href="buil.htm">buil</a>d environment which creates binaries that <a href="work.htm">work</a> on older Linux distros by controlling glibc symbol versions, dependency scoping and correcting common distro portability mistakes.&nbsp;&nbsp;It includes relaytool which can be <a href="use.htm">use</a>d to convert required dependencies into optional ones by automatically <a href="buil.htm">buil</a>ding dlopen/dlsym thunks.</span><br/>
+<br/>
+<a class="ext" href="http://Labix.org/smart">Labix.org/smart</a> <span class="quot2">>>Smart <a href="pack.htm">Pack</a>age Manager</span><br/>
+<br/>
+<a class="ext" href="http://Packer.sf.net">Packer.sf.net</a> <span class="quot2">>><a href="pack.htm">Pack</a>ages are a great convenience for gurus and new <a href="user.htm">user</a>s alike.&nbsp;&nbsp;Thus, <a href="user.htm">user</a>s may be less inclined to <a href="use.htm">use</a> software that is not <a href="pack.htm">pack</a>aged.&nbsp;&nbsp;This is unfortunate for <a href="gnu.htm">GNU</a>/Linux software developers since <a href="pack.htm">pack</a>aging software is a huge pain, especially given the huge variety of <a href="pack.htm">pack</a>aging formats.&nbsp;&nbsp;<a href="pack.htm">Pack</a>er helps to automate this process.&nbsp;&nbsp;Using a text-based wizard, <a href="pack.htm">pack</a>er can collect all the information regarding a program needed to create a <a href="pack.htm">pack</a>age.&nbsp;&nbsp;Then, a simple command is all it takes to create a debian directory <small>(<a href="use.htm">use</a>d to <a href="buil.htm">buil</a>d debian <a href="pack.htm">pack</a>ages)</small>, RPM SPEC <a href="file.htm">file</a>s <small>(for Mandriva, SuSE, and Fedora/Red Hat)</small>, and auto<a href="pack.htm">pack</a>ages spec <a href="file.htm">file</a>s <small>(auto<a href="pack.htm">pack</a>age is a system for creating distribution-neutral <a href="install.htm">install</a>ers with dependency handling)</small>.&nbsp;&nbsp;These <a href="file.htm">file</a>s are of a similar quality to hand-crafted ones. <a href="pack.htm">Pack</a>er can also automatically <a href="buil.htm">buil</a>d the <a href="pack.htm">pack</a>ages themselves if requested.</span><br/>
+<br/>
+<a class="ext" href="http://paco.sf.net">paco.sf.net</a> <span class="quot2">>><a href="pack.htm">pacK</a>AGE oRGANIZER</span><br/>
+<br/>
+<a class="ext" href="http://ASIC-Linux.com.mx/~izto/checkinstall">ASIC-Linux.com.mx/~izto/checkinstall</a><br/>
+<br/>
+<a class="ext" href="http://Web.Taranis.org/swpkg">Web.Taranis.org/swpkg</a> <span class="quot2">>>swpkg is a collection of small tools based on a fairly simple philosophy and designed to simplify the management of third <a href="part.htm">part</a>y software <a href="pack.htm">pack</a>ages including their inter-dependencies. These tools cover every aspect of <a href="buil.htm">buil</a>ding, <a href="install.htm">install</a>ing and maintaining software <a href="pack.htm">pack</a>ages and include the ability of having multiple versions of a single software <a href="pack.htm">pack</a>age <a href="install.htm">install</a>ed con<a href="curr.htm">curr</a>ently.</span><br/>
+<br/>
+<a class="ext" href="http://Nixstaller.berliOS.de">Nixstaller.berliOS.de</a> <span class="quot2">>>Nixstaller is an Open <a href="sourc.htm">Sourc</a>e project with the goal to create <a href="user.htm">user</a> friendly and flexible <a href="install.htm">install</a>ers that <a href="work.htm">work</a> on various UNIX like systems.</span><br/>
+<br/>
+<a class="ext" href="http://InstallJammer.com">InstallJammer.com</a> <span class="quot2">>><a href="install.htm">Install</a>Jammer - A <a href="free.htm">free</a>, open <a href="sourc.htm">sourc</a>e, multiplatform <a href="install.htm">install</a>er and <a href="buil.htm">buil</a>der</span><br/>
+<br/>
+<a class="ext" href="http://0install.net">0install.net</a>, <a class="ext" href="http://Zero-Install.sf.net">Zero-Install.sf.net</a> <span class="quot2">>>The Zero <a href="install.htm">Install</a> system aims to provide a better way of <a href="install.htm">install</a>ing software than <a href="trad.htm">trad</a>itional systems <small>(tarballs, apt-get, bundles, setup.exe, etc)</small>.</span><br/>
+<br/>
+klik<br/>
+loki<br/>
+<br/>
+<br/>
+UBUNTU:<br/>
+<span class="shell">$ feta # a frontend to many Debian <a href="pack.htm">pack</a>age-related tools</span><br/>
+<span class="shell">$ apt-cache search <a href="game.htm">GAME</a></span><br/>
+<span class="shell">$ sudo apt-get <a href="install.htm">install</a> SOME_<a href="title.htm">TITLE</a>_FROM_THE_SEARCH_RESULTS</span><br/>
+<span class="shell">$ apt-<a href="file.htm">file</a></span><br/>
+<br/>
+<br/>
+<a class="ext" href="http://LilyPond.org/~janneke/software/cyg-apt">LilyPond.org/~janneke/software/cyg-apt</a> <span class="quot2">>><a href="cygwin.htm">Cygwin</a> <a href="install.htm">install</a>er to keep <a href="cygwin.htm">cygwin</a> root up to date</span><br/>
+<br/>
+<a class="ext" href="http://InstallSite.org">InstallSite.org</a><br/>
+<br/>
+<a href="gnunix.htm">GNUnix</a> <a href="install.htm">install</a>s software JIT <small>(Just In Time)</small>.<br/>
+<br/>
+<span class="shell">$ sudo apt-get <a href="install.htm">install</a> update-manager-core</span><br/>
+<span class="shell">$ sudo do-release-upgrade</span><br/>
+<br/>
+<span class="shell">$ sudo cp /etc/apt/<a href="sourc.htm">sourc</a>es.list /etc/apt/<a href="sourc.htm">sourc</a>es.<a href="back.htm">back</a>up</span><br/>
+<span class="shell">$ sudo sed -i 's/feisty/gutsy/g' /etc/apt/<a href="sourc.htm">sourc</a>es.list</span><br/>
+<span class="shell">$ sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade</span><br/>
+<span class="shell">$ sudo apt-get autoremove</span><br/>
+<br/>
+<br/>
+<span class="shell">$ <a href="install.htm">install</a>util.exe <span class="quot2">>>The <a href="install.htm">Install</a>er tool allows you to <a href="install.htm">install</a> and un<a href="install.htm">install</a> server re<a href="sourc.htm">sourc</a>es by executing the <a href="install.htm">install</a>er components in a specified assembly. This tool <a href="work.htm">work</a>s in conjunction with classes in the <a class="ext" href="http://System.Configuration.Install">System.Configuration.Install</a> Name<a href="spac.htm">spac</a>e. -- <a class="ext" href="http://msdn.microsoft.com/en-us/library/50614e95(VS.80).aspx">http://msdn.microsoft.com/en-us/library/50614e95(VS.80).aspx</a></span></span><br/>
+<br/>
+<br/>
+<span class="shell">$ reg.exe query HKLM\Software\Microsoft\Windows\<a href="curr.htm">Curr</a>entVersion\Un<a href="install.htm">install</a></span><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+-----------------------------------------------------------------<br/>
+Trying to fix Vista/2008 <a href="install.htm">install</a>er<br/>
+<br/>
+<span class="shell">$ reg.exe query HKEY_LOCAL_<a href="mac.htm">MAC</a>HINE\SYSTEM\<a href="curr.htm">Curr</a>entControlSet\Services\<a href="msi.htm">MSI</a>Server</span><br/>
+<br/>
+<a class="ext" href="http://forums.techarena.in/vista-help/941238.htm">http://forums.techarena.in/vista-help/941238.htm</a> <span class="quot2">>>Altough my <a href="msi.htm">MSI</a>Server registry <a href="key.htm">key</a> was correct, there was an Enum subkey that was causing all my problems. Once I removed this <a href="key.htm">key</a>, the 64-bit <a href="install.htm">install</a>er <a href="start.htm">start</a>ed <a href="work.htm">work</a>ing again.</span><br/>
+<br/>
+<a class="ext" href="http://forums.software.com/softhelp/vista/ftopic-136939-15-days0-orderasc-.html">http://forums.software.com/softhelp/vista/ftopic-136939-15-days0-orderasc-.html</a><br/>
+<span class="quot">"'<br/>
+In Registry <a href="edit.htm">Edit</a>or, navigate to:<br/>
+HKLM\System\<a href="curr.htm">Curr</a>entControlSet\Services\<a href="msi.htm">MSI</a>Server<br/>
+then change the DisplayName value to:<br/>
+<a class="ext" href="file:///C:\WINDOWS\SysWOW64\msiexec.exe">C:\WINDOWS\SysWOW64\msiexec.exe</a> /V<br/>
+<br/>
+Close registry <a href="edit.htm">edit</a>or, then register the <a href="install.htm">install</a>er by opening a command<br/>
+<br/>
+prompt and running:<br/>
+<a class="ext" href="file:///C:\WINDOWS\SysWOW64\msiexec.exe">C:\WINDOWS\SysWOW64\msiexec.exe</a> /regserver<br/>
+'"</span><br/>
+<br/>
+<a class="ext" href="http://help.wugnet.com/vista/repair-broken-Windows-Installer-ftopict111124.html">http://help.wugnet.com/vista/repair-broken-Windows-Installer-ftopict111124.html</a><br/>
+<br/>
+<a class="ext" href="http://www.planetamd64.com/lofiversion/index.php?t16021.html">http://www.planetamd64.com/lofiversion/index.php?t16021.html</a><br/>
+</p>
+<p class='footer'>
+ Page generated from <a href=".text/install">install</a> by <a href=".code/etym.el">etym</a>.</p>
+</body>
+</html>
