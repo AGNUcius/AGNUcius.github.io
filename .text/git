@@ -1,5 +1,9 @@
 Related: version control
 
+gitref.org
+git-scm.com
+gitguys.com
+
 to publish: git commit -a -m "some message"; git push
 to update: git pull
 
@@ -111,8 +115,3 @@ git add README.txt
 git commit -a -m 'init'
 git remote add origin git@github.com:$(USER)/$(PROJECT).git
 git push -u origin master
-
-
-
-====Clone project with write access
-git clone git@github.com:AGNUcius/GNUnix.git
